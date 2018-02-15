@@ -1,65 +1,159 @@
-<!DOCTYPE HTML>
-<html>
+<html class="mdl-js" lang="en">
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Jordan Lira Examples</title>
 
-      <!-- Add to homescreen for Chrome on Android -->
-       <meta name="mobile-web-app-capable" content="yes">
-       <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+    <link rel="manifest" href="/manifest.json">
 
-       <!-- Add to homescreen for Safari on iOS -->
-       <meta name="apple-mobile-web-app-capable" content="yes">
-       <meta name="apple-mobile-web-app-status-bar-style" content="black">
-       <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-       <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
 
-       <link rel="shortcut icon" href="images/favicon.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
 
-       <meta name="theme-color" content="#3F51B5">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
 
-       <!-- Page styles -->
-    <link rel="stylesheet" href="https://getmdl.io/assets/prism-default.css">
-    <link rel="stylesheet" href="https://getmdl.io/material.min.css">
-    <link rel="stylesheet" href="https://getmdl.io/assets/main.css">
+    <link rel="shortcut icon" href="images/favicon.png">
 
-    <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        #view-source {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900;
+        }
+    </style>
 </head>
 <body>
-  <div class="docs-layout mdl-layout mdl-js-layout">
-    <header class="docs-layout-header mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <span class="docs-layout-title mdl-layout-title"><a href="../">Jordan<br>Lira<br>Examples</a></span>
-      </div>
-      <div class="docs-navigation__container">
-        <nav class="docs-navigation mdl-navigation">
-          <!-- <a href="../index.html" class="mdl-navigation__link about">About</a>
-          <a href="../started/index.html" class="mdl-navigation__link started">Getting Started</a>
-          <a href="../templates/index.html" class="mdl-navigation__link templates">Templates</a>
-          <a href="../components/index.html" class="mdl-navigation__link components">Components</a>
-          <a href="../styles/index.html" class="mdl-navigation__link styles">Styles</a>
-          <a href="../customize/index.html" class="mdl-navigation__link customize">Customize</a>
-          <a href="../showcase/index.html" class="mdl-navigation__link showcase">Showcase</a>
-          <a href="../faq/index.html" class="mdl-navigation__link faq">FAQ</a> -->
-          <div class="spacer"></div>
-          <a href="https://github.com/google/material-design-lite" class="mdl-navigation__link mdl-navigation__link--icon github"><i class="material-icons">link</i><span>GitHub</span></a>
-          <a href="../started/index.html#download" class="mdl-navigation__link mdl-navigation__link--icon download">
-            <i class="material-icons">&#xE2C4;</i><span>Download</span>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--mini-fab mdl-color--lime-A200">
-              <i class="material-icons">&#xE2C4;</i>
-            </button>
-          </a>
-        </nav>
-      </div>
-      <i class="material-icons scrollindicator scrollindicator--right">&#xE315;</i>
-      <i class="material-icons scrollindicator scrollindicator--left">&#xE314;</i>
-    </header>
-  </div>
-    Something.
+<div class="mdl-layout__container">
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header has-drawer is-upgraded"
+         data-upgraded=",MaterialLayout">
+        <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600 is-casting-shadow">
+            <div aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button"><i
+                    class="material-icons"></i></div>
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Jordan Lira Examples</span>
+                <div class="mdl-layout-spacer"></div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable is-upgraded"
+                     data-upgraded=",MaterialTextfield">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search"
+                           data-upgraded=",MaterialButton">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" id="search" type="text">
+                        <label class="mdl-textfield__label" for="search">Enter your query...</label>
+                    </div>
+                </div>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn"
+                        data-upgraded=",MaterialButton,MaterialRipple">
+                    <i class="material-icons">more_vert</i>
+                    <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+                <div class="mdl-menu__container is-upgraded">
+                    <div class="mdl-menu__outline mdl-menu--bottom-right"></div>
+                    <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right mdl-js-ripple-effect--ignore-events"
+                        for="hdrbtn" data-upgraded=",MaterialMenu,MaterialRipple">
+                        <li class="mdl-menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple">
+                            About<span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span>
+                        </li>
+                        <li class="mdl-menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple">
+                            Contact<span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span>
+                        </li>
+                        <li class="mdl-menu__item mdl-js-ripple-effect" tabindex="-1" data-upgraded=",MaterialRipple">
+                            Legal information<span class="mdl-menu__item-ripple-container"><span
+                                class="mdl-ripple"></span></span></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50"
+             aria-hidden="true">
+            <header class="demo-drawer-header">
+                <img src="https://scontent.frec10-1.fna.fbcdn.net/v/t1.0-1/p40x40/26220277_10213764858427971_8247519380501041682_n.jpg?oh=cfe166e60b834d33dabda5df62efc96d&oe=5AD98AE3"
+                     class="demo-avatar">
+                <div class="demo-avatar-dropdown">
+                    <span>jordanjr.92@gmail.com</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+                            data-upgraded=",MaterialButton,MaterialRipple">
+                        <i class="material-icons" role="presentation">arrow_drop_down</i>
+                        <span class="visuallyhidden">Accounts</span>
+                        <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+                    <div class="mdl-menu__container is-upgraded">
+                        <div class="mdl-menu__outline mdl-menu--bottom-right"></div>
+                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-js-ripple-effect--ignore-events"
+                            for="accbtn" data-upgraded=",MaterialMenu,MaterialRipple">
+                            <li class="mdl-menu__item mdl-js-ripple-effect" tabindex="-1"
+                                data-upgraded=",MaterialRipple"><i class="material-icons">add</i>Add another
+                                account...<span class="mdl-menu__item-ripple-container"><span class="mdl-ripple"></span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons"
+                                                           role="presentation">cached</i>BinaryDecimal</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content mdl-color--grey-100">
+            <div class="mdl-grid demo-content">
+                <div class="demo-cards mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing">
+                    <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+                        <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
+                            <h2 class="mdl-card__title-text">Binary/Decimal Conversor</h2>
+                        </div>
+
+                        <div class="mdl-grid">
+                            <input class="mdl-textfield__input mdl-cell mdl-cell--5-col" id="decfield" type="text"
+                                   placeholder="decimal">
+                            <i class="material-icons" style="color:gray;">cached</i>
+                            <input class="mdl-textfield__input mdl-cell mdl-cell--6-col" id="binfield" type="text" placeholder="binary">
+                        </div>
+
+                        <div id="demonstration" class="mdl-grid mdl-color-text--grey-600"></div>
+
+                        <div class="mdl-card__actions mdl-card--border">
+                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="decToBin()"
+                               data-upgraded=",MaterialButton,MaterialRipple">Convert<span
+                                    class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="mdl-layout__obfuscator"></div>
+        <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/dashboard/" target="_blank"
+           id="view-source"
+           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-color-text--white"
+           data-upgraded=",MaterialButton,MaterialRipple">View Source<span class="mdl-button__ripple-container"><span
+                class="mdl-ripple"></span></span></a>
+        <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <script src="javascript/conversor.js"></script>
+    </div>
+</div>
+
 </body>
 </html>
