@@ -12,46 +12,54 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-var dataCacheName = 'jordanliraexamples-v1';
-var cacheName = 'jordanliraexamples-v1';
-var filesToCache = [
+const dataCacheName = 'jordanliraexamples-v1';
+const cacheName = 'jordanliraexamples-v1';
+const filesToCache = [
     '/',
     '/index.html',
     '/javascript/conversor.js',
     '/styles/styles.css',
 ];
 
-self.addEventListener('install', function(e) {
-    console.log('[ServiceWorker] Install');
-    e.waitUntil(
-        caches.open(cacheName).then(function(cache) {
-            console.log('[ServiceWorker] Caching app shell');
-            return cache.addAll(filesToCache);
-        })
-    );
+if (navigator.serviceWorker.controller) {
+    console.log('[PWA Builder] active service worker found, no need to register')
+} else {
+    //Register the ServiceWorker
+    navigator.serviceWorker.register('service-worker.js', {
+        scope: './'
+    }).then(function(reg) {
+        console.log('Service worker has been registered for scope:'+ reg.scope);
+    });
+}
+
+//Install stage sets up the offline page in the cahche and opens a new cache
+self.addEventListener('install', function(event) {
+    var offlinePage = new Request('offline.html');
+    event.waitUntil(
+        fetch(offlinePage).then(function(response) {
+            return caches.open('pwabuilder-offline').then(function(cache) {
+                console.log('[PWA Builder] Cached offline page during Install'+ response.url);
+                return cache.put(offlinePage, response);
+            });
+        }));
 });
 
-self.addEventListener('activate', function(e) {
-    console.log('[ServiceWorker] Activate');
-    e.waitUntil(
-        caches.keys().then(function(keyList) {
-            return Promise.all(keyList.map(function(key) {
-                if (key !== cacheName && key !== dataCacheName) {
-                    console.log('[ServiceWorker] Removing old cache', key);
-                    return caches.delete(key);
-                }
-            }));
-        })
-    );
-    /*
-     * Fixes a corner case in which the app wasn't returning the latest data.
-     * You can reproduce the corner case by commenting out the line below and
-     * then doing the following steps: 1) load app for first time so that the
-     * initial New York City data is shown 2) press the refresh button on the
-     * app 3) go offline 4) reload the app. You expect to see the newer NYC
-     * data, but you actually see the initial data. This happens because the
-     * service worker is not yet activated. The code below essentially lets
-     * you activate the service worker faster.
-     */
-    return self.clients.claim();
+//If any fetch fails, it will show the offline page.
+//Maybe this should be limited to HTML documents?
+self.addEventListener('fetch', function(event) {
+    event.respondWith(
+        fetch(event.request).catch(function(error) {
+            console.error( '[PWA Builder] Network request Failed. Serving offline page ' + error );
+            return caches.open('pwabuilder-offline').then(function(cache) {
+                return cache.match('offline.html');
+            });
+        }));
+});
+
+//This is a event that can be fired from your page to tell the SW to update the offline page
+self.addEventListener('refreshOffline', function(response) {
+    return caches.open('pwabuilder-offline').then(function(cache) {
+        console.log('[PWA Builder] Offline page updated from refreshOffline event: '+ response.url);
+        return cache.put(offlinePage, response);
+    });
 });
