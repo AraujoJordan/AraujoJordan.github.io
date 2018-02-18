@@ -123,35 +123,72 @@
                 <div class="demo-cards mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing">
                     <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
                         <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
-                            <h2 class="mdl-card__title-text">Binary/Decimal Conversor</h2>
+                            <h2 class="mdl-card__title-text">Decimal to Binary Conversor</h2>
                         </div>
 
                         <div class="mdl-grid">
                             <input class="mdl-textfield__input mdl-cell mdl-cell--5-col" id="decfield" type="text"
                                    placeholder="decimal">
-                            <i class="material-icons" style="color:gray;">cached</i>
-                            <input class="mdl-textfield__input mdl-cell mdl-cell--6-col" id="binfield" type="text" placeholder="binary">
+                            <i class="material-icons" style="color:gray;">send</i>
+                            <input class="mdl-textfield__input mdl-cell mdl-cell--6-col" id="binfield" type="text"
+                                   placeholder="binary">
                         </div>
 
                         <div id="demonstration" class="mdl-grid mdl-color-text--grey-600"></div>
 
                         <div class="mdl-card__actions mdl-card--border">
                             <button class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="decToBin()"
-                               data-upgraded=",MaterialButton,MaterialRipple">Convert<span
-                                    class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+                                    data-upgraded=",MaterialButton,MaterialRipple">Convert<span
+                                    class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-cards mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing">
+                    <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+                        <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
+                            <h2 class="mdl-card__title-text">Anything to Decimal Conversor</h2>
+                        </div>
+                        <div class="mdl-grid">
+                            <input class="mdl-cell mdl-cell--2-col mdl-textfield__input mdl-cell mdl-cell--1-col"
+                                   id="genericfield" type="text"
+                                   placeholder="number">
+                            <div class="mdl-cell mdl-cell--5-col mdl-selectfield mdl-js-selectfield">
+                                <select id="myselect" name="myselect" class="mdl-selectfield__select">
+                                    <option value="2" >Binary</option>
+                                    <option value="10">Decimal</option>
+                                    <option value="8">Octal</option>
+                                    <option value="16">Hexadecimal</option>
+                                </select>
+                                <i class="material-icons" style="color:gray;">send</i>
+                            </div>
+                            <input class="mdl-textfield__input mdl-cell mdl-cell--2-col" id="decimalfield" type="number"
+                                   placeholder="decimal">
+                        </div>
+
+                        <div id="demonstration2" class="mdl-grid mdl-color-text--grey-600"></div>
+
+                        <div class="mdl-card__actions mdl-card--border">
+                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="anythingToDec()"
+                                    data-upgraded=",MaterialButton,MaterialRipple">Convert<span
+                                    class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
         <div class="mdl-layout__obfuscator"></div>
-        <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/dashboard/" target="_blank"
+        <a href="https://github.com/AraujoJordan/AraujoJordan.github.io/blob/master/javascript/conversor.js" target="_blank"
            id="view-source"
            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-color-text--white"
            data-upgraded=",MaterialButton,MaterialRipple">View Source<span class="mdl-button__ripple-container"><span
                 class="mdl-ripple"></span></span></a>
         <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <link rel="manifest" href="/manifest.json">
         <script src="javascript/conversor.js"></script>
+        <script src="service-worker.js"></script>
     </div>
 </div>
 
