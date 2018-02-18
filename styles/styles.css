@@ -71,6 +71,7 @@ html, body {
   padding: 16px;
   height: 151px;
 }
+
 .demo-avatar-dropdown {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -176,7 +177,10 @@ _:-ms-input-placeholder, :root .demo-graph {
   height: 32px;
 }
 .demo-cards .mdl-card__title.mdl-card__title {
-  color: white;
+
+    color: white;
+    height: 176px;
+    background: url('http://materialdesignblog.com/wp-content/uploads/2015/11/1200x628.png') center / cover;
   font-size: 24px;
   font-weight: 400;
 }

@@ -86,10 +86,11 @@ function anythingToDec() {
     let base = typeField.value;
     if (!genericValue.includes(".")) {
         for (let numberIndex = 0; numberIndex < charValues.length; numberIndex++) {
-            textResult2.innerText += "("+charValues[numberIndex]+" * "+base+"<sup>"+(charValues.length-(numberIndex+1))+"</sup>)&nbsp;+&nbsp;";
+            let expoent = (charValues.length-(numberIndex+1));
+            textResult2.innerText += "("+charValues[numberIndex]+" * "+base+" <sup>"+expoent+"</sup> )+";
             resultInt += hexCharToDecConverter(charValues[numberIndex])*Math.pow(base, charValues.length-(numberIndex+1));
         }
-        textResult2.innerHTML = textResult2.innerText.slice(0,-7);
+        textResult2.innerHTML = textResult2.innerText.slice(0,-1);
         textResult2.innerHTML += " = "+resultInt;
         decimalField.value = resultInt;
     }
