@@ -1,20 +1,33 @@
 const decField = document.getElementById('decfield');
 const binField = document.getElementById('binfield');
+const signField = document.getElementById("signField");
 const textResult = document.getElementById('demonstration');
 
 const genericField = document.getElementById("genericfield");
-const typeField = document.getElementById("myselect");
+const typeField = document.getElementById("typeField");
 const decimalField = document.getElementById("decimalfield");
 const textResult2 = document.getElementById('demonstration2');
 
-const maxDecimalPlaces = 10;
+const maxDecimalPlaces = 30;
 
 decField.onkeyup = function () {
     decField.value = decField.value.replace(",", ".");
     decField.value = decField.value.replace(/[^\d.-]/g, '');
 
-    if (decField.value.search(/^(?:(?:\d+(?:\.\d*)?|\.\d+)(?:[-+/*%]|$))+$/))
-        decField.value = decField.value.substring(0, decField.value.length - 1);
+    if(decField.value.startsWith("+")) {
+        decField.value = decField.value.replace("+", "");
+        signField.selectedIndex = 0;
+    }
+    if(decField.value.startsWith("-")) {
+        decField.value = decField.value.replace("-", "");
+        signField.selectedIndex = 1;
+    }
+    decToBin();
+};
+
+genericField.onkeyup = function () {
+    genericField.value = genericField.value.replace(",", ".");
+    anythingToDec();
 };
 
 function decToBin() {
@@ -34,7 +47,7 @@ function decToBin() {
                 resultInt += "" + (index % 2);
             }
             resultInt = resultInt.split("").reverse().join("");
-            binField.value = resultInt;
+            binField.value = signField.value + " " + resultInt;
             return
         }
         else {
@@ -66,9 +79,9 @@ function decToBin() {
                     break;
                 partsOfnumber = String(partsOfnumber[1]).split('.');
             }
-
-            binField.value = resultInt + " " + resultFloat;
+            binField.value = signField.value + " " + resultInt + " " + resultFloat;
         }
+        textResult.innerHTML = signField.options[signField.selectedIndex].text + " = " + signField.value + "<br>" + textResult.innerHTML;
 
     }
 }
@@ -76,7 +89,8 @@ function decToBin() {
 function anythingToDec() {
     decimalField.value = "";
     textResult2.innerHTML = "";
-    let resultInt = 0;
+    let result = 0;
+    let numberIndex = 0
 
     let genericValue = genericField.value;
     if (genericValue === "")
@@ -84,35 +98,55 @@ function anythingToDec() {
 
     let charValues = genericValue.split('');
     let base = typeField.value;
-    if (!genericValue.includes(".")) {
-        for (let numberIndex = 0; numberIndex < charValues.length; numberIndex++) {
-            let expoent = (charValues.length-(numberIndex+1));
-            textResult2.innerText += "("+charValues[numberIndex]+" * "+base+" <sup>"+expoent+"</sup> )+";
-            resultInt += hexCharToDecConverter(charValues[numberIndex])*Math.pow(base, charValues.length-(numberIndex+1));
-        }
-        textResult2.innerHTML = textResult2.innerText.slice(0,-1);
-        textResult2.innerHTML += " = "+resultInt;
-        decimalField.value = resultInt;
-    }
-    else {
+    let dotPosition = genericValue.indexOf(".");
+    if (dotPosition === -1)
+        dotPosition = charValues.length;
 
+    for (numberIndex = 0; numberIndex < dotPosition; numberIndex++) {
+        let expoent = (dotPosition - (numberIndex + 1));
+        textResult2.innerText += "(" + charValues[numberIndex] + " * " + base + " <sup>" + expoent + "</sup> )+";
+        result += hexCharToDecConverter(charValues[numberIndex]) * Math.pow(base, dotPosition - (numberIndex + 1));
     }
+
+    let expoent = -1;
+    numberIndex++;
+
+    if (dotPosition !== (charValues.length - 1))
+        for (numberIndex; numberIndex < charValues.length; numberIndex++) {
+            textResult2.innerText += "(" + charValues[numberIndex] + " * " + base + " <sup>" + expoent + "</sup> )+";
+            result += hexCharToDecConverter(charValues[numberIndex]) * Math.pow(base, expoent);
+            expoent--;
+        }
+
+
+    textResult2.innerHTML = textResult2.innerText.slice(0, -1);
+    textResult2.innerHTML += " = " + result;
+    decimalField.value = result;
+
 }
+
 
 function hexCharToDecConverter(value) {
     switch (value) {
         case "A":
-        case "a": return 10;
+        case "a":
+            return 10;
         case "B":
-        case "b": return 11;
+        case "b":
+            return 11;
         case "C":
-        case "c": return 12;
+        case "c":
+            return 12;
         case "D":
-        case "d": return 13;
+        case "d":
+            return 13;
         case "E":
-        case "e": return 14;
+        case "e":
+            return 14;
         case "f":
-        case "F": return 15;
-        default: return value;
+        case "F":
+            return 15;
+        default:
+            return value;
     }
 }

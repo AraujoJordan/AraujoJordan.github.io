@@ -124,21 +124,25 @@
                         </div>
 
                         <div class="mdl-grid">
+                            <select onChange="decToBin()" id="signField" name="myselect" class="mdl-selectfield mdl-cell mdl-cell--2-col">
+                                <option value="0" selected="selected">+</option>
+                                <option value="1">-</option>
+                            </select>
                             <input class="mdl-textfield__input mdl-cell mdl-cell--5-col" id="decfield" type="text"
                                    placeholder="decimal">
                             <i class="material-icons" style="color:gray;">redo</i>
-                            <input class="mdl-textfield__input mdl-cell mdl-cell--6-col" id="binfield" type="text"
+                            <input class="mdl-textfield__input mdl-cell mdl-cell--4-col" id="binfield" type="text"
                                    placeholder="binary">
                         </div>
 
                         <div id="demonstration" class="mdl-grid mdl-color-text--grey-600"></div>
 
-                        <div class="mdl-card__actions mdl-card--border">
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="decToBin()"
-                                    data-upgraded=",MaterialButton,MaterialRipple">Convert<span
-                                    class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
-                            </button>
-                        </div>
+                        <!--<div class="mdl-card__actions mdl-card&#45;&#45;border">-->
+                            <!--<button class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="decToBin()"-->
+                                    <!--data-upgraded=",MaterialButton,MaterialRipple">Convert<span-->
+                                    <!--class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>-->
+                            <!--</button>-->
+                        <!--</div>-->
                     </div>
                 </div>
 
@@ -152,26 +156,26 @@
                                    id="genericfield" type="text"
                                    placeholder="number">
                             <div class="mdl-cell mdl-cell--5-col mdl-selectfield mdl-js-selectfield">
-                                <select id="myselect" name="myselect" class="mdl-selectfield__select">
+                                <select onChange="anythingToDec()" id="typeField" name="myselect" class="mdl-selectfield">
                                     <option value="2" >Binary</option>
                                     <option value="10">Decimal</option>
                                     <option value="8">Octal</option>
                                     <option value="16">Hexadecimal</option>
                                 </select>
-                                <i class="material-icons" style="color:gray;">redo</i>
                             </div>
+                            <i class="material-icons" style="color:gray;">redo</i>
                             <input class="mdl-textfield__input mdl-cell mdl-cell--2-col" id="decimalfield" type="number"
                                    placeholder="result">
                         </div>
 
                         <div id="demonstration2" class="mdl-grid mdl-color-text--grey-600"></div>
 
-                        <div class="mdl-card__actions mdl-card--border">
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="anythingToDec()"
-                                    data-upgraded=",MaterialButton,MaterialRipple">Convert<span
-                                    class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
-                            </button>
-                        </div>
+                        <!--<div class="mdl-card__actions mdl-card&#45;&#45;border">-->
+                            <!--<button class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="anythingToDec()"-->
+                                    <!--data-upgraded=",MaterialButton,MaterialRipple">Convert<span-->
+                                    <!--class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>-->
+                            <!--</button>-->
+                        <!--</div>-->
                     </div>
                 </div>
             </div>
