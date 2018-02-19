@@ -7,28 +7,9 @@ const genericField = document.getElementById("genericfield");
 const typeField = document.getElementById("typeField");
 const decimalField = document.getElementById("decimalfield");
 const textResult2 = document.getElementById('demonstration2');
+const signField2 = document.getElementById("signField2");
 
 const maxDecimalPlaces = 30;
-
-decField.onkeyup = function () {
-    decField.value = decField.value.replace(",", ".");
-    decField.value = decField.value.replace(/[^\d.-]/g, '');
-
-    if(decField.value.startsWith("+")) {
-        decField.value = decField.value.replace("+", "");
-        signField.selectedIndex = 0;
-    }
-    if(decField.value.startsWith("-")) {
-        decField.value = decField.value.replace("-", "");
-        signField.selectedIndex = 1;
-    }
-    decToBin();
-};
-
-genericField.onkeyup = function () {
-    genericField.value = genericField.value.replace(",", ".");
-    anythingToDec();
-};
 
 function decToBin() {
 
@@ -118,12 +99,43 @@ function anythingToDec() {
             expoent--;
         }
 
-
     textResult2.innerHTML = textResult2.innerText.slice(0, -1);
-    textResult2.innerHTML += " = " + result;
-    decimalField.value = result;
+    if (signField2.options[signField2.selectedIndex].text === "-")
+        textResult2.innerHTML = "-(" + textResult2.innerHTML + ")";
+    decimalField.value = signField2.options[signField2.selectedIndex].text + result;
+    textResult2.innerHTML += " = " + (signField2.options[signField2.selectedIndex].text+"1")*result;
 
 }
+
+decField.onkeyup = function () {
+    decField.value = decField.value.replace(",", ".");
+    decField.value = decField.value.replace(/[^\d.-]/g, '');
+
+    if (decField.value.startsWith("+")) {
+        decField.value = decField.value.replace("+", "");
+        signField.selectedIndex = 0;
+    }
+    if (decField.value.startsWith("-")) {
+        decField.value = decField.value.replace("-", "");
+        signField.selectedIndex = 1;
+    }
+    decToBin();
+};
+
+genericField.onkeyup = function () {
+    genericField.value = genericField.value.replace(",", ".");
+
+    if (genericField.value.startsWith("+")) {
+        genericField.value = genericField.value.replace("+", "");
+        signField2.selectedIndex = 0;
+    }
+    if (genericField.value.startsWith("-")) {
+        genericField.value = genericField.value.replace("-", "");
+        signField2.selectedIndex = 1;
+    }
+
+    anythingToDec();
+};
 
 
 function hexCharToDecConverter(value) {

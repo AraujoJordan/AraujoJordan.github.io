@@ -152,10 +152,14 @@
                             <h2 class="mdl-card__title-text">Anything to Decimal Conversor</h2>
                         </div>
                         <div class="mdl-grid">
+                            <select onChange="anythingToDec()" id="signField2" name="myselect" class="mdl-selectfield mdl-cell mdl-cell--1-col">
+                                <option value="0" selected="selected">+</option>
+                                <option value="1">-</option>
+                            </select>
                             <input class="mdl-cell mdl-cell--4-col mdl-textfield__input mdl-cell mdl-cell--1-col"
                                    id="genericfield" type="text"
                                    placeholder="number">
-                            <div class="mdl-cell mdl-cell--4-col mdl-selectfield mdl-js-selectfield">
+                            <div class="mdl-cell mdl-cell--3-col mdl-selectfield mdl-js-selectfield">
                                 <select onChange="anythingToDec()" id="typeField" name="myselect" class="mdl-selectfield">
                                     <option value="2" >Binary</option>
                                     <option value="10">Decimal</option>
