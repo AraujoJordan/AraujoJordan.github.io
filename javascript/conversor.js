@@ -102,7 +102,7 @@ function anythingToDec() {
     textResult2.innerHTML = textResult2.innerText.slice(0, -1);
     if (signField2.options[signField2.selectedIndex].text === "-")
         textResult2.innerHTML = "-(" + textResult2.innerHTML + ")";
-    decimalField.value = signField2.options[signField2.selectedIndex].text + result;
+    decimalField.value = signField2.options[signField2.selectedIndex].text +""+ result;
     textResult2.innerHTML += " = " + (signField2.options[signField2.selectedIndex].text+"1")*result;
 
 }
