@@ -519,6 +519,14 @@ a.dotted-link:hover {
   padding-left: 25px;
 }
 
+.education .item .skillz {
+  font-family: "Lato", arial, sans-serif;
+  font-size: 15px;
+  color: #434343b8;
+  font-weight: 600;
+  padding-left: 25px;
+}
+
 .education .item .university .year {
   color: #b0b7bf;
   font-weight: 500;
