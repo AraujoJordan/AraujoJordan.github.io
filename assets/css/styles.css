@@ -119,8 +119,15 @@ a.dotted-link:hover {
 .header {
   padding: 30px 0;
   background: #f5f5f5;
-  border-top: 10px solid #778492;
+  /* border-top: 10px solid #778492; */
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08), 0 3px 10px 0 rgba(0, 0, 0, 0.08);
+  /* transform: skewY(-2deg) */
+}
+
+.headerBackground {
+  /* background-image: radial-gradient(#f5f5f5, #e5e5e5); */
+  
+  /* transform: skewY(2deg) */
 }
 
 .divider {
