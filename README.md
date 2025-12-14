@@ -1,6 +1,7 @@
-# Jordan Araujo - Android Engineer Portfolio
+# Portfolio
 
 Welcome to my personal portfolio website source code. This project showcases my experience, technical philosophy, and projects as an Android Engineer.
+Made in React, Typescirpt, Vite and Tailwind
 
 ## 🚀 Live Demo
 [https://araujojordan.github.io/](https://araujojordan.github.io/)
