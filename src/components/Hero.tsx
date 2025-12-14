@@ -74,7 +74,7 @@ export function Hero() {
                     initial={{ opacity: 0, rotateY: 30, rotateZ: -10, scale: 0.9 }}
                     animate={{ opacity: 1, rotateY: -12, rotateZ: 6, scale: 1 }}
                     transition={{ duration: 1, type: "spring" }}
-                    className="flex-1 relative hidden md:block perspective-1000"
+                    className="flex-1 relative perspective-1000"
                 >
                     <div className="relative mx-auto border-gray-800 bg-gray-900 border-[8px] rounded-[2.5rem] h-[600px] w-[300px] shadow-2xl flex flex-col transform transition-transform hover:scale-105 duration-500">
                         <div className="h-[32px] w-[3px] bg-gray-800 absolute -left-[10px] top-[72px] rounded-l-lg"></div>

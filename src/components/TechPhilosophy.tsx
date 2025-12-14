@@ -91,10 +91,10 @@ export function Footer() {
                 </div>
 
                 <div className="flex gap-6">
-                    <a href="#" className="p-2 rounded-full bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
+                    <a href="https://github.com/AraujoJordan" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
                         <Github className="w-5 h-5" />
                     </a>
-                    <a href="#" className="p-2 rounded-full bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
+                    <a href="https://linkedin.com/in/araujojordan/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
                         <Linkedin className="w-5 h-5" />
                     </a>
                     <a href="mailto:jordanjr.92@gmail.com" className="p-2 rounded-full bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
