@@ -1,11 +1,11 @@
-import { Terminal, Shield, Workflow, Mail, Github, Linkedin } from "lucide-react"
+import { Terminal, Shield, Workflow, Mail, Github, Linkedin, Twitter, Instagram, Phone } from "lucide-react"
 
 export function TechPhilosophy() {
     const philosophies = [
         {
-            title: "Widly used approach",
+            title: "KISS + DRY",
             icon: <Workflow className="w-8 h-8 text-cyan-400" />,
-            description: "A preference for widely used approaches instead of reinventing the wheel. I believe developers work fast and better with using well known patterns and tools available in the market."
+            description: "Huge fan of KISS and DRY. I believe that simple and concise code is easier to maintain and understand."
         },
         {
             title: "Comprehensive Tested",
@@ -90,14 +90,23 @@ export function Footer() {
                     <p className="text-slate-500">Senior Android Engineer • KMP Specialist</p>
                 </div>
 
-                <div className="flex gap-6">
-                    <a href="https://github.com/AraujoJordan" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
+                <div className="flex gap-4">
+                    <a href="https://github.com/AraujoJordan" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-800/50 hover:bg-slate-700 text-slate-300 hover:text-cyan-400 transition-colors">
                         <Github className="w-5 h-5" />
                     </a>
-                    <a href="https://linkedin.com/in/araujojordan/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
+                    <a href="https://x.com/araujo_jordan" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-800/50 hover:bg-slate-700 text-slate-300 hover:text-cyan-400 transition-colors">
+                        <Twitter className="w-5 h-5" />
+                    </a>
+                    <a href="https://www.instagram.com/araujojordan/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-800/50 hover:bg-slate-700 text-slate-300 hover:text-cyan-400 transition-colors">
+                        <Instagram className="w-5 h-5" />
+                    </a>
+                    <a href="https://linkedin.com/in/araujojordan/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-800/50 hover:bg-slate-700 text-slate-300 hover:text-cyan-400 transition-colors">
                         <Linkedin className="w-5 h-5" />
                     </a>
-                    <a href="mailto:jordanjr.92@gmail.com" className="p-2 rounded-full bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
+                    <a href="tel:+18254380252" className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-800/50 hover:bg-slate-700 text-slate-300 hover:text-cyan-400 transition-colors">
+                        <Phone className="w-5 h-5" />
+                    </a>
+                    <a href="mailto:jordanjr.92@gmail.com" className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-800/50 hover:bg-slate-700 text-slate-300 hover:text-cyan-400 transition-colors">
                         <Mail className="w-5 h-5" />
                     </a>
                 </div>
