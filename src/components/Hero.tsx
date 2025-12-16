@@ -62,7 +62,7 @@ export function Hero() {
                     </div>
 
                     <div className="pt-8 flex items-center justify-center lg:justify-start gap-6 text-slate-500 text-sm">
-                        <span className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-green-500" /> Open to Opportunities</span>
+                        {/* <span className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-green-500" /> Open to Opportunities</span> */}
                         <span className="flex items-center gap-2">Kotlin</span>
                         <span className="flex items-center gap-2">Compose</span>
                         <span className="flex items-center gap-2">KMP</span>
