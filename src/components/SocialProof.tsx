@@ -3,7 +3,7 @@ export function SocialProof() {
         { label: "Mobile Experience", value: "10+ Years" },
         { label: "Industry Focus", value: "Fintech & Retail" },
         { label: "Tech Stack", value: "Kotlin & Compose" },
-        { label: "Education", value: "BS Comp Sci" },
+        { label: "Education", value: "Computer Science" },
     ]
 
     return (

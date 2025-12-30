@@ -50,26 +50,22 @@ export function TechPhilosophy() {
                                 <div className="w-3 h-3 rounded-full bg-red-500" />
                                 <div className="w-3 h-3 rounded-full bg-yellow-500" />
                                 <div className="w-3 h-3 rounded-full bg-green-500" />
-                                <span className="ml-2 text-xs text-slate-500 font-mono">YourViewModel.kt</span>
+                                <span className="ml-2 text-xs text-slate-500 font-mono">TechStack.kt</span>
                             </div>
-                            <div className="p-6 overflow-x-auto">
+                            <div className="p-6 overflow-x-auto min-h-[300px]">
                                 <pre className="font-mono text-sm leading-relaxed">
                                     <code className="text-slate-300">
-                                        internal <span className="text-purple-400">class</span> <span className="text-yellow-300">YourViewModel</span> {'('}{'\n'}
-                                        {'  '}<span className="text-purple-400">private val</span> repo: <span className="text-yellow-300">Repository</span>{'\n'}
-                                        {')'} : <span className="text-yellow-300">ViewModel</span>() {'{'}{'\n'}
-                                        {'  '}<span className="text-purple-400">private val</span> _uiState = <span className="text-yellow-300">MutableStateFlow</span>&lt;<span className="text-green-400">UiState</span>&gt;(<span className="text-yellow-300">Loading</span>){'\n'}
-                                        {'  '}<span className="text-purple-400">val</span> uiState = _uiState.<span className="text-blue-400">asStateFlow</span>(){'\n\n'}
-                                        {'  '}<span className="text-purple-400">fun</span> <span className="text-blue-400">loadData</span>() {'{'}{'\n'}
-                                        {'    '}viewModelScope.<span className="text-blue-400">launch</span> {'{'}{'\n'}
-                                        {'      '}repo.<span className="text-blue-400">getData</span>(){'\n'}
-                                        {'        '}.<span className="text-blue-400">catch</span> {'{'} _uiState.value = <span className="text-yellow-300">Error</span>(it) {'}'}{'\n'}
-                                        {'        '}.<span className="text-blue-400">collect</span> {'{'}{'\n'}
-                                        {'          '}_uiState.value = <span className="text-yellow-300">Success</span>(it){'\n'}
-                                        {'        '}{'}'}{'\n'}
+                                        <span className="text-purple-400">class</span> <span className="text-yellow-300">MyViewModel</span> : <span className="text-yellow-300">ViewModel</span>() {'{'}{'\n'}
+                                        {'    '}<span className="text-purple-400">val</span> dataFlow = <span className="text-blue-400">reflow</span> {'{'}{'\n'}
+                                        {'        '}api.<span className="text-blue-400">fetchData</span>(){'\n'}
                                         {'    '}{'}'}{'\n'}
-                                        {'  '}{'}'}{'\n'}
-                                        {'}'}
+                                        {'}'}{'\n\n'}
+                                        <span className="text-purple-400">@Composable</span>{'\n'}
+                                        <span className="text-purple-400">fun</span> <span className="text-blue-400">MyScreen</span>(viewModel: <span className="text-yellow-300">MyViewModel</span>) {'{'}{'\n'}
+                                        {'    '}<span className="text-yellow-300">ReflowContent</span>(viewModel.dataFlow) {'{'} data <span className="text-purple-400">-&gt;</span>{'\n'}
+                                        {'        '}<span className="text-blue-400">MyContent</span>(data){'\n'}
+                                        {'    '}{'}'}{'\n'}
+                                        {'}'}{'\n'}
                                     </code>
                                 </pre>
                             </div>

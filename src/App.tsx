@@ -1,6 +1,7 @@
 import { Hero } from "./components/Hero"
 import { SocialProof } from "./components/SocialProof"
 import { Projects } from "./components/Projects"
+import { OpenSource } from "./components/OpenSource"
 import { TechPhilosophy, Footer } from "./components/TechPhilosophy"
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Hero />
         <SocialProof />
         <Projects />
+        <OpenSource />
         <TechPhilosophy />
       </main>
 
