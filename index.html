@@ -18,6 +18,29 @@
 
 <body>
   <div id="root"></div>
+  <script>
+    (function() {
+      var words = ["Fintech", "Retail", "Trades"];
+      var idx = 0;
+      function cycle() {
+        var spans = document.querySelectorAll("span.text-3xl");
+        for (var i = 0; i < spans.length; i++) {
+          var label = spans[i].nextElementSibling;
+          if (label && label.textContent.trim() === "Industry Focus") {
+            idx = (idx + 1) % words.length;
+            spans[i].style.transition = "opacity 0.4s";
+            spans[i].style.opacity = "0";
+            setTimeout(function(el) {
+              el.textContent = words[idx];
+              el.style.opacity = "1";
+            }, 400, spans[i]);
+            break;
+          }
+        }
+      }
+      setTimeout(function() { setInterval(cycle, 2500); }, 1500);
+    })();
+  </script>
 </body>
 
 </html>
