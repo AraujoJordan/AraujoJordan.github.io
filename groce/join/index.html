@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join a Groce List</title>
+  <meta name="description" content="You've been invited to a shared Groce grocery list. Open the app or download it to join." />
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="/groce/assets/styles.css" />
+  <link rel="icon" type="image/webp" href="/groce/assets/logo.webp" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo-link" href="https://groce.araujojordan.com">
+      <img class="header-logo" src="/groce/assets/logo.webp" alt="Groce logo" />
+      <span class="app-name">Groce</span>
+    </a>
+  </header>
+
+  <main class="join-wrap">
+    <div class="app-card">
+
+      <img class="app-logo-large" src="/groce/assets/logo.webp" alt="Groce app icon" />
+
+      <h1>Groce</h1>
+      <p class="tagline">Your shared grocery list, simplified.</p>
+
+      <!-- Shown only when a valid listId is present in the URL -->
+      <div id="join-info-box" class="join-info-box" hidden>
+        <span class="label">You were invited to list</span>
+        <span class="list-id" id="list-id-display"></span>
+      </div>
+
+      <p class="status-msg" id="status-msg">Open the app or download it below to get started.</p>
+
+      <div class="action-buttons">
+        <button id="open-in-app" class="btn btn-primary btn-full">Open in Groce</button>
+
+        <!-- Android -->
+        <a id="android-store-btn" href="#" class="store-btn" rel="noopener" target="_blank">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3.18 23.76c.37.21.8.21 1.17 0L13.5 18.5l-2.25-2.25-8.07 7.51zm-.93-20.52A1.5 1.5 0 0 0 2 4.5v15a1.5 1.5 0 0 0 .25.84l.09.09 8.41-8.41v-.2L2.34 3.15l-.09.09zM20.31 10.5l-2.39-1.38-2.67 2.67 2.67 2.67 2.41-1.38a1.5 1.5 0 0 0 0-2.58zm-18.07 12L13.5 15.5l-2.25-2.25L2.24 21.15l.01.01c.36.52.93.84 1.59.84l-.6-.54z"/>
+          </svg>
+          <span class="store-label">
+            <span class="store-sub">Get it on</span>
+            Google Play
+          </span>
+        </a>
+
+        <!-- iOS -->
+        <a id="ios-store-btn" href="#" class="store-btn" rel="noopener" target="_blank">
+          <svg width="20" height="22" viewBox="0 0 814 1000" fill="currentColor" aria-hidden="true">
+            <path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-57.8-155.5-127.4C46 407.7 8 251.5 8 104.9c0-57.8 5.8-115 28.8-168.8 38.2-87.8 120.8-150.2 214-152.4 59-1.7 111.8 27.7 145.7 28.8 40.8 1.1 117.9-18.8 175.4-83.6 1.7-2.2 27.7-21.6 52.5-21.6 1.7 0 7.8.6 17.5 2.8C708.1-264.3 788.1 340.9 788.1 340.9z"/>
+          </svg>
+          <span class="store-label">
+            <span class="store-sub">Download on the</span>
+            App Store
+          </span>
+        </a>
+      </div>
+
+      <!-- About Groce -->
+      <div class="about-section">
+        <h2>What is Groce?</h2>
+        <p>Groce is a collaborative grocery list app for Android and iOS. Create lists, share them with family or friends, and shop together in real time.</p>
+        <ul class="features-list">
+          <li>Shared lists that sync instantly</li>
+          <li>Invite family &amp; friends to collaborate</li>
+          <li>Scan product barcodes to add items instantly</li>
+          <li>Automatic product images from the web</li>
+          <li>Check off items as you shop</li>
+        </ul>
+      </div>
+
+      <p class="join-footer">
+        By using Groce you agree to our
+        <a href="/groce/terms">Terms of Service</a> and
+        <a href="/groce/privacy">Privacy Policy</a>.
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/groce/privacy">Privacy Policy</a>
+      <a href="/groce/terms">Terms of Service</a>
+    </div>
+    <p>&copy; 2026 Groce &mdash; <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a></p>
+  </footer>
+
+  <script src="/groce/assets/app.js"></script>
+</body>
+</html>

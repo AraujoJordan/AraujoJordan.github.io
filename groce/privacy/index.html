@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Groce</title>
+  <meta name="description" content="Groce Privacy Policy — how we collect, use, and protect your data." />
+  <link rel="stylesheet" href="/groce/assets/styles.css" />
+  <link rel="icon" type="image/webp" href="/groce/assets/logo.webp" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo-link" href="https://groce.araujojordan.com">
+      <img class="header-logo" src="/groce/assets/logo.webp" alt="Groce logo" />
+      <span class="app-name">Groce</span>
+    </a>
+    <nav class="header-right">
+      <a class="nav-link" href="/groce/terms">Terms of Service</a>
+      <a class="nav-link" href="/groce/join">Get the App</a>
+    </nav>
+  </header>
+
+  <main class="page-wrap">
+
+    <div class="legal-header">
+      <h1>Privacy Policy</h1>
+      <p class="effective-date">Effective date: April 29, 2026</p>
+    </div>
+
+    <p>
+      Groce (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) is a collaborative grocery list app for
+      Android and iOS. This Privacy Policy explains what information we collect when you use Groce, how we use it,
+      and with whom we share it. We have tried to write this in plain language — if anything is unclear,
+      please contact us at <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a>.
+    </p>
+
+    <h2>1. What Information We Collect</h2>
+
+    <h3>Account information</h3>
+    <p>
+      When you create an account — either with an email and password or via Google Sign-In — we store:
+    </p>
+    <ul>
+      <li>Your email address</li>
+      <li>Your display name</li>
+      <li>Your profile photo URL (if provided by Google; otherwise none)</li>
+    </ul>
+    <p>
+      This information is stored in <strong>Firebase Authentication</strong> and in a <code>users</code> document
+      in <strong>Cloud Firestore</strong> (Google Cloud project <code>groce-3c697</code>).
+    </p>
+
+    <h3>Grocery list data</h3>
+    <p>When you use Groce, we store the content you create in Cloud Firestore:</p>
+    <ul>
+      <li>List names and the email of the list owner</li>
+      <li>Item names, quantities, units, categories, and checked/unchecked state</li>
+      <li>Optional item photos you capture or select from your photo library</li>
+      <li>The display name of whoever added each item</li>
+    </ul>
+
+    <h3>Sharing and collaboration data</h3>
+    <p>
+      When you share a list, we store the email addresses of people you invite, people who have accepted an
+      invitation, and people who have requested access via a shared link. This is necessary to grant the correct
+      collaborators access to each list.
+    </p>
+
+    <h2>2. What We Do Not Collect</h2>
+    <ul>
+      <li>Your contacts or address book</li>
+      <li>Your location (we never request location permission)</li>
+      <li>Keystroke or usage analytics beyond what Firebase provides by default</li>
+      <li>Any data from people who have not created a Groce account</li>
+    </ul>
+
+    <h2>3. Third-Party Services</h2>
+    <p>Groce integrates with several third-party services. When you use certain features, your data is sent to these services:</p>
+
+    <h3>Google Firebase (Authentication &amp; Firestore)</h3>
+    <p>
+      All user accounts and grocery data are stored in Google Firebase. Your data is processed according to
+      <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Google&rsquo;s Firebase Privacy Policy</a>.
+    </p>
+
+    <h3>Google Sign-In</h3>
+    <p>
+      If you sign in with Google, we receive your Google account&rsquo;s email address, name, and profile photo URL.
+      We do not receive any other Google account data (e.g., contacts, Drive, Gmail).
+    </p>
+
+    <h3>OpenFoodFacts</h3>
+    <p>
+      When you scan a product barcode, the barcode number is sent to
+      <a href="https://world.openfoodfacts.org/privacy" rel="noopener" target="_blank">Open Food Facts</a>
+      to retrieve the product name and image. No account data is sent.
+    </p>
+
+    <h3>Image search services</h3>
+    <p>
+      When Groce fetches an image for a grocery item, it sends the item&rsquo;s name as a search query to one
+      or more of the following services: DuckDuckGo, Google Images, Bing Images, Brave Search, Yandex Images,
+      and Startpage. Only the item name is sent — no account information or list content. Results are cached
+      on your device to minimise repeat requests.
+    </p>
+
+    <h3>Unsplash</h3>
+    <p>
+      Groce may query the <a href="https://unsplash.com/privacy" rel="noopener" target="_blank">Unsplash API</a>
+      for product photos using item names as search terms. Unsplash&rsquo;s own privacy policy governs how
+      it handles those requests.
+    </p>
+
+    <h3>Google AdMob</h3>
+    <p>
+      Groce includes Google AdMob to display ads. AdMob may collect:
+    </p>
+    <ul>
+      <li>Your advertising identifier (Google Advertising ID on Android; IDFA on iOS)</li>
+      <li>Device information (model, OS version, language, time zone)</li>
+      <li>IP address and coarse location derived from IP</li>
+    </ul>
+    <p>
+      Android AdMob app ID: <code>ca-app-pub-6959580291787430~6885986518</code><br />
+      iOS AdMob app ID: <code>ca-app-pub-6959580291787430~2835060865</code><br />
+      See <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google&rsquo;s Privacy Policy</a>
+      for details on how AdMob uses this data.
+    </p>
+
+    <h3>Facebook SDK (Android only)</h3>
+    <p>
+      The Android version of Groce includes the Facebook SDK. Facebook may collect device and app usage
+      information in accordance with
+      <a href="https://www.facebook.com/policy.php" rel="noopener" target="_blank">Meta&rsquo;s Data Policy</a>.
+    </p>
+
+    <h2>4. Device Permissions</h2>
+    <p>Groce requests the following device permissions and uses them only for the stated purpose:</p>
+    <ul>
+      <li><strong>Camera</strong> — to scan product barcodes and to capture photos for grocery items.</li>
+      <li><strong>Photo library</strong> — to let you attach an existing photo to a grocery item.</li>
+      <li><strong>Internet</strong> — required for all features (Firebase sync, image search, etc.).</li>
+    </ul>
+    <p>We do not access the camera or photo library for any other purpose.</p>
+
+    <h2>5. How We Use Your Information</h2>
+    <ul>
+      <li>To create and authenticate your account.</li>
+      <li>To store, sync, and display your grocery lists to you and your collaborators.</li>
+      <li>To enable sharing features (invitations, join links, pending requests).</li>
+      <li>To fetch product information and images on your behalf.</li>
+      <li>To display advertisements via AdMob.</li>
+    </ul>
+    <p>We do not sell your personal information to third parties.</p>
+
+    <h2>6. Sharing Your Data with Others</h2>
+    <p>
+      When you share a grocery list with another person, that person will be able to see:
+    </p>
+    <ul>
+      <li>All items in the list, including who added each item.</li>
+      <li>The display names and email addresses of other collaborators on the same list.</li>
+    </ul>
+    <p>
+      Only people you explicitly invite (or who you approve after they request access) can see a shared list.
+    </p>
+
+    <h2>7. Data Retention and Deletion</h2>
+    <p>
+      Your grocery lists and items remain in Firestore until you delete them within the app.
+      If you would like to delete your account and all associated data, please contact us at
+      <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a> and we will process
+      your request within 30 days.
+    </p>
+    <p>
+      Note: in-app account self-deletion is not yet available. We plan to add it in a future update.
+    </p>
+
+    <h2>8. Children</h2>
+    <p>
+      Groce is not directed at children under 13. We do not knowingly collect personal information from
+      children under 13. If you believe we have inadvertently collected such information, please contact us
+      and we will delete it promptly.
+    </p>
+
+    <h2>9. Security</h2>
+    <p>
+      All data transmitted between the app and Firebase is encrypted in transit using TLS. Data stored in
+      Firestore is encrypted at rest by Google. We apply Firebase security rules to ensure users can only
+      read and write data they are authorised to access.
+    </p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. When we do, we will update the effective date at
+      the top of this page. Continued use of Groce after a change constitutes your acceptance of the updated policy.
+    </p>
+
+    <div class="contact-block">
+      <p>
+        <strong>Questions or requests?</strong><br />
+        Contact us at <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a>.
+        We aim to respond within 5 business days.
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/groce/privacy">Privacy Policy</a>
+      <a href="/groce/terms">Terms of Service</a>
+      <a href="/groce/join">Get the App</a>
+    </div>
+    <p>&copy; 2026 Groce &mdash; <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a></p>
+  </footer>
+
+</body>
+</html>
