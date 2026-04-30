@@ -1,36 +1,464 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2306b6d4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='5' y='2' width='14' height='20' rx='2' ry='2'></rect><line x1='12' y1='18' x2='12.01' y2='18'></line></svg>" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jordan L. Araujo Jr.</title>
+
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2306b6d4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='5' y='2' width='14' height='20' rx='2' ry='2'></rect><line x1='12' y1='18' x2='12.01' y2='18'></line></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Jordan L. Araujo Jr." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://araujojordan.github.io/" />
-  <meta property="og:description" content="Mobile Engineer specializing in iOS & Android development with industry focus in Fintech, Retail, and Trades." />
+  <meta property="og:description" content="Mobile Engineer specializing in iOS &amp; Android development with industry focus in Fintech, Retail, and Trades." />
   <meta property="og:site_name" content="Jordan L. Araujo Jr." />
-  <meta property="og:image" content="https://avatars.githubusercontent.com/u/4549660?s=400&u=8d89a027c86549ead25aedf4e14fa3b2dd179394&v=4" />
-  <meta property="og:image:secure_url" content="https://avatars.githubusercontent.com/u/4549660?s=400&u=8d89a027c86549ead25aedf4e14fa3b2dd179394&v=4" />
+  <meta property="og:image" content="https://araujojordan.github.io/images/avatar.jpg" />
+  <meta property="og:image:secure_url" content="https://araujojordan.github.io/images/avatar.jpg" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="400" />
   <meta property="og:image:height" content="400" />
   <meta property="og:image:alt" content="Jordan L. Araujo Jr." />
   <meta property="og:locale" content="en_US" />
-  <script type="module" src="/src/main.tsx"></script>
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <div id="root"></div>
-</body>
 
+  <div class="backdrop"></div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__inner">
+
+        <!-- Text column -->
+        <div class="hero__text">
+          <div>
+            <span class="pill-badge">Senior Android Engineer • 10+ Years Exp</span>
+          </div>
+          <h1 class="hero__title">
+            Jordan L Araujo Jr
+            <span class="hero__subtitle">Building High-Performance Mobile Experiences at Scale</span>
+          </h1>
+          <p class="hero__desc">
+            Specializing in Kotlin Multiplatform, Jetpack Compose, and Scalable Architecture for Fintech and Retail.
+            Delivering banking-grade security and observability.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn-primary" href="https://docs.google.com/document/d/15TzIqkxX9N1hWjzkD8NoKhykeGha4EuLUBucg-foQ9U/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+              View Resume
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+            </a>
+            <div class="social-icons">
+              <a class="social-icon" href="https://github.com/AraujoJordan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              </a>
+              <a class="social-icon" href="https://x.com/araujo_jordan" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+              </a>
+              <a class="social-icon" href="https://www.instagram.com/araujojordan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              </a>
+              <a class="social-icon" href="https://linkedin.com/in/araujojordan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a class="social-icon" href="tel:+18254380252" aria-label="Phone">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.23h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l1.82-1.82a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </a>
+              <a class="social-icon" href="mailto:jordanjr.92@gmail.com" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__stack">
+            <span>Kotlin</span>
+            <span>Compose</span>
+            <span>KMP</span>
+          </div>
+        </div>
+
+        <!-- Phone mockup column -->
+        <div class="hero__phone-wrap">
+          <div class="phone">
+            <div class="phone__btn phone__btn--top-left"></div>
+            <div class="phone__btn phone__btn--mid-left-1"></div>
+            <div class="phone__btn phone__btn--mid-left-2"></div>
+            <div class="phone__btn phone__btn--right"></div>
+            <div class="phone__screen">
+              <div class="phone__ui">
+                <div class="phone__bar">
+                  <svg class="phone__bar-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                  <div class="phone__bar-avatar"></div>
+                </div>
+                <div class="phone__content">
+                  <div class="skeleton skeleton--title"></div>
+                  <div class="phone__img-box">
+                    <img src="images/avatar.jpg" alt="Profile" />
+                  </div>
+                  <div class="phone__filler-row">
+                    <div class="phone__filler"></div>
+                    <div class="phone__filler"></div>
+                  </div>
+                  <div class="phone__lines">
+                    <div class="phone__line"></div>
+                    <div class="phone__line"></div>
+                    <div class="phone__line phone__line--short"></div>
+                  </div>
+                </div>
+                <div class="phone__fab">+</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__decor hero__decor--close">}</div>
+          <div class="hero__decor hero__decor--open">&lt;</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOCIAL PROOF ===== -->
+  <div class="social-proof">
+    <div class="container">
+      <div class="social-proof__grid">
+        <div class="social-proof__metric">
+          <span class="social-proof__value">10+ Years</span>
+          <span class="social-proof__label">Mobile Experience</span>
+        </div>
+        <div class="social-proof__metric">
+          <span class="social-proof__value" id="industry-focus">Fintech</span>
+          <span class="social-proof__label">Industry Focus</span>
+        </div>
+        <div class="social-proof__metric">
+          <span class="social-proof__value">Kotlin &amp; Compose</span>
+          <span class="social-proof__label">Tech Stack</span>
+        </div>
+        <div class="social-proof__metric">
+          <span class="social-proof__value">Computer Science</span>
+          <span class="social-proof__label">Education</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2>Apps <span class="cyan-accent">Showcase</span></h2>
+        <p>A selection of apps and teams that I've worked on.</p>
+      </div>
+      <div class="projects__grid">
+
+        <!-- ServiceTitan Field -->
+        <div class="card project-card">
+          <div class="card__header">
+            <div class="card__top">
+              <div class="card__icon">
+                <img src="images/servicetitan_field.jpg" alt="ServiceTitan Field" />
+              </div>
+              <span class="card__category">Role: Senior Android Engineer</span>
+            </div>
+            <h3 class="card__title">ServiceTitan Field</h3>
+            <p class="card__desc">Building the next-gen field service mobile app for technicians across trades.</p>
+          </div>
+          <div class="card__content">
+            <p>Working on the ServiceTitan Field mobile app, a ground-up rebuild of the native Android experience for field technicians in HVAC, plumbing, electrical trades, and more.</p>
+            <p>Working with real-time syncing between office and field, enabling seamless communication and data flow with an almost crash-free experience.</p>
+            <p>Implementing offline-first architecture allowing technicians to work without connectivity and auto-sync when back online. Also implementing AI integrations to better help technicians on field.</p>
+            <p>Integrating digital forms, pricebook management, mobile payments, and GPS routing features for a complete field service workflow.</p>
+          </div>
+          <div class="card__footer">
+            <div class="card__tags">
+              <span class="tag">Kotlin</span>
+              <span class="tag">Compose</span>
+              <span class="tag">Offline-First</span>
+              <span class="tag">Real-Time Sync</span>
+              <span class="tag">GPS</span>
+              <span class="tag">AI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instacart -->
+        <div class="card project-card">
+          <div class="card__header">
+            <div class="card__top">
+              <div class="card__icon">
+                <img src="images/instacart.png" alt="Instacart" />
+              </div>
+              <span class="card__category">Role: Android Engineer</span>
+            </div>
+            <h3 class="card__title">Instacart</h3>
+            <p class="card__desc">Scaling the customer-facing app with robust architecture.</p>
+          </div>
+          <div class="card__content">
+            <p>Worked on the customer app with massive codebase requiring stability and speed for distributed teams.</p>
+            <p>Worked with MVU architecture, Dagger, and comprehensive Snapshot testing (Paparazzi).</p>
+            <p>Maintained legacy code with modern architecture and ensured quality at scale.</p>
+            <p>Assisted multiple teams on different projects and squads.</p>
+          </div>
+          <div class="card__footer">
+            <div class="card__tags">
+              <span class="tag">Kotlin</span>
+              <span class="tag">Compose</span>
+              <span class="tag">GraphQL</span>
+              <span class="tag">MVU</span>
+              <span class="tag">Dagger</span>
+              <span class="tag">Paparazzi</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Neo Financial -->
+        <div class="card project-card">
+          <div class="card__header">
+            <div class="card__top">
+              <div class="card__icon">
+                <img src="images/neo.png" alt="Neo Financial" />
+              </div>
+              <span class="card__category">Role: Senior Android Dev</span>
+            </div>
+            <h3 class="card__title">Neo Financial</h3>
+            <p class="card__desc">Building a high-performance investment dashboard for millions of users.</p>
+          </div>
+          <div class="card__content">
+            <p>Worked on banking app on Investment dashboard with complex financial data in real-time graphs visualization on mobile.</p>
+            <p>Create a fluid, interactive charting interface.</p>
+            <p>Leveraged Jetpack Compose with native Canvas drawing commands and optimized recomposition scopes.</p>
+            <p>Improved Gradle project modularization to drastically reduce build times on both local and CI/CD pipelines.</p>
+          </div>
+          <div class="card__footer">
+            <div class="card__tags">
+              <span class="tag">Kotlin</span>
+              <span class="tag">MVVM</span>
+              <span class="tag">Compose Canvas</span>
+              <span class="tag">Koin</span>
+              <span class="tag">Sentry</span>
+              <span class="tag">GraphQL</span>
+              <span class="tag">Bitrise</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Remitbee -->
+        <div class="card project-card">
+          <div class="card__header">
+            <div class="card__top">
+              <div class="card__icon">
+                <img src="images/remitbee.png" alt="Remitbee" />
+              </div>
+              <span class="card__category">Role: Lead Android Dev</span>
+            </div>
+            <h3 class="card__title">Remitbee Money Transfer</h3>
+            <p class="card__desc">Redesigning architecture for banking-grade security.</p>
+          </div>
+          <div class="card__content">
+            <p>Built MVP app architecture with modern architecture and great performance.</p>
+            <p>Worked on banking-grade security and reliable transfers for a growing user base.</p>
+            <p>Used Jenkins/Fastlane pipelines, Kotlin and a custom made E2E testing approach.</p>
+            <p>Successful Google Play launch, intern mentorship, and community open-source contributions.</p>
+          </div>
+          <div class="card__footer">
+            <div class="card__tags">
+              <span class="tag">Kotlin</span>
+              <span class="tag">Security</span>
+              <span class="tag">Jenkins</span>
+              <span class="tag">Fastlane</span>
+              <span class="tag">GraphQL</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OPEN SOURCE ===== -->
+  <section class="open-source">
+    <div class="container">
+      <div class="section-header" style="position:relative;z-index:10;">
+        <h2>Open <span class="cyan-accent">Source</span></h2>
+        <p>Libraries and tools I've built to help the developer community.</p>
+      </div>
+      <div class="open-source__grid">
+
+        <!-- Reflow -->
+        <a class="card repo-card" href="https://github.com/AraujoJordan/Reflow" target="_blank" rel="noopener noreferrer">
+          <div class="card__header">
+            <div class="repo-card__header-row">
+              <div class="repo-card__github-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              </div>
+              <svg class="repo-card__external" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </div>
+            <h3 class="repo-card__title">Reflow</h3>
+            <p class="repo-card__desc">A Kotlin Multiplatform library that simplifies data fetching with automatic retry logic, loading state management, and flexible caching strategies.</p>
+          </div>
+          <div class="repo-card__tags">
+            <span class="repo-tag">Kotlin Multiplatform</span>
+            <span class="repo-tag">Compose</span>
+            <span class="repo-tag">Caching</span>
+            <span class="repo-tag">Coroutines</span>
+          </div>
+        </a>
+
+        <!-- ExcuseMe -->
+        <a class="card repo-card" href="https://github.com/AraujoJordan/ExcuseMe" target="_blank" rel="noopener noreferrer">
+          <div class="card__header">
+            <div class="repo-card__header-row">
+              <div class="repo-card__github-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              </div>
+              <svg class="repo-card__external" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </div>
+            <h3 class="repo-card__title">ExcuseMe</h3>
+            <p class="repo-card__desc">A polite and easy way to ask for Android Permissions. Reduces boilerplate code with a simple one-line simplified usage.</p>
+          </div>
+          <div class="repo-card__tags">
+            <span class="repo-tag">Android</span>
+            <span class="repo-tag">Kotlin</span>
+            <span class="repo-tag">Permissions</span>
+            <span class="repo-tag">Library</span>
+          </div>
+        </a>
+
+        <!-- Kobaia -->
+        <a class="card repo-card" href="https://github.com/AraujoJordan/Kobaia" target="_blank" rel="noopener noreferrer">
+          <div class="card__header">
+            <div class="repo-card__header-row">
+              <div class="repo-card__github-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              </div>
+              <svg class="repo-card__external" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </div>
+            <h3 class="repo-card__title">Kobaia</h3>
+            <p class="repo-card__desc">UX Test Lib built on top of UIAutomator to provide a simple discoverable API to reduce boilerplate and verbosity in tests.</p>
+          </div>
+          <div class="repo-card__tags">
+            <span class="repo-tag">Android</span>
+            <span class="repo-tag">Testing</span>
+            <span class="repo-tag">UIAutomator</span>
+            <span class="repo-tag">Kotlin</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECH PHILOSOPHY ===== -->
+  <section class="philosophy">
+    <div class="philosophy__noise"></div>
+    <div class="container">
+      <div class="philosophy__inner">
+
+        <div class="philosophy__list">
+          <h2>Code <span class="purple-accent">Philosophy</span></h2>
+          <div class="philosophy__items">
+
+            <div class="philosophy__item">
+              <div class="philosophy__icon" style="color:var(--cyan-400)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+              </div>
+              <div class="philosophy__item-text">
+                <h3>KISS + DRY</h3>
+                <p>Huge fan of KISS and DRY. I believe that simple and concise code is easier to maintain and understand.</p>
+              </div>
+            </div>
+
+            <div class="philosophy__item">
+              <div class="philosophy__icon" style="color:var(--purple-400)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="philosophy__item-text">
+                <h3>Comprehensive Tested</h3>
+                <p>A robust pyramid of Unit, Integration, and Snapshot tests. If it's not tested, it doesn't ship.</p>
+              </div>
+            </div>
+
+            <div class="philosophy__item">
+              <div class="philosophy__icon" style="color:var(--orange-400)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
+              </div>
+              <div class="philosophy__item-text">
+                <h3>Modularization</h3>
+                <p>Feature-based modules to improve build times and enforce separation and improve maintainability. Scalable for large engineering teams.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="philosophy__code">
+          <div class="code-window">
+            <div class="code-window__bar">
+              <div class="dot dot--red"></div>
+              <div class="dot dot--yellow"></div>
+              <div class="dot dot--green"></div>
+              <span class="code-window__filename">TechStack.kt</span>
+            </div>
+            <div class="code-window__body">
+              <pre><code><span class="kw">class</span> <span class="type">MyViewModel</span> : <span class="type">ViewModel</span>() {
+    <span class="kw">val</span> dataFlow = <span class="fn">reflow</span> {
+        api.<span class="fn">fetchData</span>()
+    }
+}
+
+<span class="kw">@Composable</span>
+<span class="kw">fun</span> <span class="fn">MyScreen</span>(viewModel: <span class="type">MyViewModel</span>) {
+    <span class="type">ReflowContent</span>(viewModel.dataFlow) { data <span class="kw">-&gt;</span>
+        <span class="fn">MyContent</span>(data)
+    }
+}</code></pre>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <h3 class="footer__name">Jordan Lira de Araujo Junior</h3>
+          <p class="footer__sub">Senior Android Engineer • KMP Specialist</p>
+        </div>
+        <div class="social-icons">
+          <a class="social-icon" href="https://github.com/AraujoJordan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </a>
+          <a class="social-icon" href="https://x.com/araujo_jordan" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
+          <a class="social-icon" href="https://www.instagram.com/araujojordan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a class="social-icon" href="https://linkedin.com/in/araujojordan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a class="social-icon" href="tel:+18254380252" aria-label="Phone">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.23h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l1.82-1.82a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+          <a class="social-icon" href="mailto:jordanjr.92@gmail.com" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
 </html>

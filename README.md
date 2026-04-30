@@ -1,22 +1,28 @@
-# Portfolio
+# araujojordan.github.io
 
-Welcome to my personal portfolio website source code. This project showcases my experience, technical philosophy, and projects as an Android Engineer.
-Made in React, Typescirpt, Vite and Tailwind
+Personal portfolio site for Jordan L. Araujo Jr. — Senior Android Engineer.
 
-## 🚀 Live Demo
-[https://araujojordan.github.io/](https://araujojordan.github.io/)
+Plain HTML + CSS + JS. No build step, no framework.
 
-## 🛠 Tech Stack
-Built with modern web technologies:
-- **React 19** - UI Library
-- **TypeScript** - Type Safety
-- **Vite** - Build Tool
-- **Tailwind CSS** - Styling
-- **Framer Motion** - Animations
-- **Lucide React** - Icons
+## Structure
 
-## ✨ Features
-- **Responsive Design**: Optimized for all devices.
-- **Interactive UI**: Smooth animations and transitions.
-- **Clean Architecture**: Meaningful component separation.
-- **Dark Mode**: Sleek, modern aesthetic.
+```
+index.html      — all page markup
+styles.css      — all styles
+app.js          — cycling "Industry Focus" text (~15 lines)
+images/         — local copies of all images
+CNAME           — www.araujojordan.com
+.nojekyll       — tells GitHub Pages not to run Jekyll
+```
+
+## Local preview
+
+```
+python3 -m http.server 8000
+```
+
+Then open http://localhost:8000.
+
+## Deploy
+
+Push to `master`. GitHub Pages serves from branch `master` / root.
