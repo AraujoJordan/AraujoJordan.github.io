@@ -382,9 +382,10 @@ body {
 
 .social-proof__grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding: 2rem 0;
+  justify-items: center;
 }
 
 .social-proof__metric {
@@ -405,9 +406,6 @@ body {
   color: transparent;
   transition: opacity 0.4s;
 }
-
-#industry-focus { transition: opacity 0.4s; }
-#industry-focus.fading { opacity: 0; }
 
 .social-proof__label {
   font-size: 0.875rem;
@@ -813,7 +811,7 @@ body {
   .hero__title { font-size: 3.75rem; }
   .hero__subtitle { font-size: 2.25rem; }
 
-  .social-proof__grid { grid-template-columns: repeat(4, 1fr); }
+  .social-proof__grid { grid-template-columns: repeat(3, 1fr); }
   .social-proof__value { font-size: 2.25rem; }
 
   .projects__grid { grid-template-columns: repeat(2, 1fr); }
