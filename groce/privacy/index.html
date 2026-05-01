@@ -48,7 +48,7 @@
     </ul>
     <p>
       This information is stored in <strong>Firebase Authentication</strong> and in a <code>users</code> document
-      in <strong>Cloud Firestore</strong> (Google Cloud project <code>groce-3c697</code>).
+      in <strong>Cloud Firestore</strong>.
     </p>
 
     <h3>Grocery list data</h3>
@@ -90,27 +90,6 @@
       We do not receive any other Google account data (e.g., contacts, Drive, Gmail).
     </p>
 
-    <h3>OpenFoodFacts</h3>
-    <p>
-      When you scan a product barcode, the barcode number is sent to
-      <a href="https://world.openfoodfacts.org/privacy" rel="noopener" target="_blank">Open Food Facts</a>
-      to retrieve the product name and image. No account data is sent.
-    </p>
-
-    <h3>Image search services</h3>
-    <p>
-      When Groce fetches an image for a grocery item, it sends the item&rsquo;s name as a search query to one
-      or more of the following services: DuckDuckGo, Google Images, Bing Images, Brave Search, Yandex Images,
-      and Startpage. Only the item name is sent — no account information or list content. Results are cached
-      on your device to minimise repeat requests.
-    </p>
-
-    <h3>Unsplash</h3>
-    <p>
-      Groce may query the <a href="https://unsplash.com/privacy" rel="noopener" target="_blank">Unsplash API</a>
-      for product photos using item names as search terms. Unsplash&rsquo;s own privacy policy governs how
-      it handles those requests.
-    </p>
 
     <h3>Google AdMob</h3>
     <p>
@@ -122,17 +101,8 @@
       <li>IP address and coarse location derived from IP</li>
     </ul>
     <p>
-      Android AdMob app ID: <code>ca-app-pub-6959580291787430~6885986518</code><br />
-      iOS AdMob app ID: <code>ca-app-pub-6959580291787430~2835060865</code><br />
       See <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google&rsquo;s Privacy Policy</a>
       for details on how AdMob uses this data.
-    </p>
-
-    <h3>Facebook SDK (Android only)</h3>
-    <p>
-      The Android version of Groce includes the Facebook SDK. Facebook may collect device and app usage
-      information in accordance with
-      <a href="https://www.facebook.com/policy.php" rel="noopener" target="_blank">Meta&rsquo;s Data Policy</a>.
     </p>
 
     <h2>4. Device Permissions</h2>
@@ -180,7 +150,7 @@
     <h2>8. Children</h2>
     <p>
       Groce is not directed at children under 13. We do not knowingly collect personal information from
-      children under 13. If you believe we have inadvertently collected such information, please contact us
+      children under 13. Additionally, we have implemented protections to prevent adding alcohol, tobacco, and other adult-related products to a list. If you believe we have inadvertently collected such information, please contact us
       and we will delete it promptly.
     </p>
 
