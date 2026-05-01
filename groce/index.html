@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Groce - Collaborative Grocery Shopping</title>
+  <meta name="description" content="Groce is a collaborative grocery list app. Create, edit, and share grocery lists with family and friends in real-time.">
+  
+  <link rel="icon" type="image/png" href="assets/app-icon-1024.png" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Groce - Grocery Shopping, Together" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/app-icon-1024.png" />
+  <meta property="og:description" content="A collaborative grocery list app with real-time sync, smart image search, and barcode scanning." />
+</head>
+<body>
+
+  <div class="bg-glow"></div>
+  <div class="bg-glow-right"></div>
+
+  <div class="container">
+    <header>
+      <div class="logo-container">
+        <img src="assets/groce_logo.webp" alt="Groce Logo" class="logo">
+        <span class="logo-text">Groce</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#tech">Tech Stack</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="badge">New Release</div>
+        <h1>Grocery Shopping,<br><span>Together.</span></h1>
+        <p>Groce makes managing your groceries seamless. Create lists, share them instantly with family, scan barcodes, and sync everything in real-time.</p>
+        <div class="hero-cta">
+          <a href="#" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+            Download App
+          </a>
+          <a href="#features" class="btn btn-outline">Explore Features</a>
+        </div>
+      </div>
+      
+      <div class="hero-image" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem;">
+        <img src="assets/groce_logo.webp" alt="Groce App Logo" style="width: 200px; height: 200px; border-radius: 40px; box-shadow: 0 25px 50px -12px rgba(16, 185, 129, 0.3);">
+        <img src="assets/groce_name.webp" alt="Groce Name" style="width: 250px; object-fit: contain;">
+      </div>
+    </section>
+  </div>
+
+  <section class="tech-stack" id="tech">
+    <div class="container">
+      <div style="text-align: center;">
+        <h3 style="color: var(--text-muted); font-weight: 500; font-size: 1rem; letter-spacing: 2px; text-transform: uppercase;">Powered By Modern Technology</h3>
+        <div class="tech-logos">
+          <div class="tech-item">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 12L12 22L22 12L12 2Z" fill="#7F52FF"/><path d="M22 12L12 2V22L22 12Z" fill="#B829FF"/></svg>
+            Kotlin Multiplatform
+          </div>
+          <div class="tech-item">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 4H8C5.79086 4 4 5.79086 4 8V16C4 18.2091 5.79086 20 8 20H16C18.2091 20 20 18.2091 20 16V8C20 5.79086 18.2091 4 16 4Z" fill="#4285F4"/><path d="M10.5 15.5L15.5 10.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.5 10.5L15.5 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Compose
+          </div>
+          <div class="tech-item">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#FFCA28"/><path d="M12 7L16 14H8L12 7Z" fill="#FFA000"/><path d="M8 14L5 19H19L16 14H8Z" fill="#F57C00"/></svg>
+            Firebase
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Built for your household</h2>
+        <p>Everything you need to make grocery trips fast, collaborative, and organized without the hassle.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3>Real-Time Sync</h3>
+          <p>Share lists with family members and see updates instantly as items are added, checked off, or removed.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+          </div>
+          <h3>Smart Images</h3>
+          <p>Groce automatically finds product images using intelligent search algorithms across multiple engines.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path><path d="M15 12c-1.5 0-3 1.5-3 3"></path><path d="M9 12c1.5 0 3-1.5 3-3"></path></svg>
+          </div>
+          <h3>AI Powered</h3>
+          <p>Intelligent grocery suggestions and smart categorization powered by AI to make your shopping list building effortless.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3>Robust & Offline</h3>
+          <p>Engineered to work seamlessly even in bad network conditions inside a grocery store.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="logo-container" style="opacity: 0.5;">
+          <img src="assets/groce_logo.webp" alt="Groce Logo" style="height: 24px; width: 24px; border-radius: 6px;">
+          <span style="font-size: 1.2rem; font-weight: 600;">Groce</span>
+        </div>
+        
+        <div class="footer-links">
+          <a href="privacy/">Privacy Policy</a>
+          <a href="terms/">Terms of Service</a>
+        </div>
+        
+        <div class="copyright">
+          &copy; <script>document.write(new Date().getFullYear())</script> Jordan L. Araujo Jr. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
