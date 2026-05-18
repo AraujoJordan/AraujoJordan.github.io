@@ -1,0 +1,11 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.araujojordan.groce",
+    "sha256_cert_fingerprints": [
+      "98:D7:7C:75:B0:F9:48:65:0B:DC:1E:48:F8:29:39:25:EE:83:01:9B:24:B8:A4:C6:9E:F5:C6:89:DE:95:2D:9F",
+      "98:01:69:E3:11:90:E6:D6:65:02:BE:15:45:58:76:BA:17:B7:33:5F:90:DC:48:92:4E:0A:C7:90:2E:9D:67:A0"
+    ]
+  }
+}]

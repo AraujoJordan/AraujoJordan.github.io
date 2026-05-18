@@ -20,8 +20,8 @@ function isIOS() {
 
 // ─── listId extraction ─────────────────────────────────────────────────────────
 // Accepts either:
-//   ?listId=abc123          (query param, used when served as join.html directly)
-//   /join/abc123            (pathname, used when served behind a Firebase rewrite)
+//   ?listId=abc123          (query param — used after the 404.html redirect from GitHub Pages)
+//   /groce/join/abc123      (pathname — matched if served behind a server-side rewrite)
 
 function getListId() {
   const params = new URLSearchParams(window.location.search);

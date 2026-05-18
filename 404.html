@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script>
+    // GitHub Pages 404 → route /groce/join/LIST_ID to the join page
+    var path = window.location.pathname;
+    var match = path.match(/^\/groce\/join\/([a-zA-Z0-9_-]+)\/?$/);
+    if (match) {
+      window.location.replace('/groce/join/?listId=' + match[1]);
+    } else {
+      window.location.replace('/');
+    }
+  </script>
+</head>
+<body></body>
+</html>
