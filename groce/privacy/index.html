@@ -25,7 +25,7 @@
 
     <div class="legal-header">
       <h1>Privacy Policy</h1>
-      <p class="effective-date">Effective date: April 29, 2026</p>
+      <p class="effective-date">Effective date: May 18, 2026</p>
     </div>
 
     <p>
@@ -45,6 +45,7 @@
       <li>Your email address</li>
       <li>Your display name</li>
       <li>Your profile photo URL (if provided by Google; otherwise none)</li>
+      <li>A legal-age confirmation timestamp — recorded once at sign-up when you self-attest that you are of legal age to purchase alcohol, tobacco, and other age-restricted products in your jurisdiction. We do not collect your date of birth, identity documents, or biometric data.</li>
     </ul>
     <p>
       This information is stored in <strong>Firebase Authentication</strong> and in a <code>users</code> document
@@ -112,7 +113,7 @@
       <li><strong>Photo library</strong> — to let you attach an existing photo to a grocery item.</li>
       <li><strong>Internet</strong> — required for all features (Firebase sync, image search, etc.).</li>
     </ul>
-    <p>We do not access the camera or photo library for any other purpose.</p>
+    <p>We do not use the camera or photo library for age verification, identity verification, or biometric data collection of any kind.</p>
 
     <h2>5. How We Use Your Information</h2>
     <ul>
@@ -139,19 +140,25 @@
     <h2>7. Data Retention and Deletion</h2>
     <p>
       Your grocery lists and items remain in Firestore until you delete them within the app.
-      If you would like to delete your account and all associated data, please contact us at
-      <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a> and we will process
+      If you would like to delete your account and all associated data, please visit our
+      <a href="/groce/delete-account/">Account Deletion</a> page for instructions; we will process
       your request within 30 days.
     </p>
     <p>
       Note: in-app account self-deletion is not yet available. We plan to add it in a future update.
     </p>
 
-    <h2>8. Children</h2>
+    <h2>8. Children and Age Requirements</h2>
     <p>
       Groce is not directed at children under 13. We do not knowingly collect personal information from
-      children under 13. Additionally, we have implemented protections to prevent adding alcohol, tobacco, and other adult-related products to a list. If you believe we have inadvertently collected such information, please contact us
-      and we will delete it promptly.
+      children under 13.
+    </p>
+    <p>
+      At sign-up, every user must self-attest that they are of legal age to purchase alcohol, tobacco, and
+      other age-restricted products in their jurisdiction. Users who decline this attestation cannot use the app.
+      We do not perform AI-based, photo-based, or biometric age checks — the attestation is a simple
+      self-declaration. If you believe we have inadvertently collected information from an ineligible user,
+      please contact us and we will delete it promptly.
     </p>
 
     <h2>9. Security</h2>
