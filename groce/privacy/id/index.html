@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kebijakan Privasi — Groce</title>
+  <meta name="description" content="Kebijakan Privasi Groce — cara kami mengumpulkan, menggunakan, dan melindungi data Anda." />
+  <link rel="stylesheet" href="/groce/assets/styles.css" />
+  <link rel="icon" type="image/webp" href="/groce/assets/logo.webp" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo-link" href="https://groce.araujojordan.com">
+      <img class="header-logo" src="/groce/assets/logo.webp" alt="Groce logo" />
+      <span class="app-name">Groce</span>
+    </a>
+    <nav class="header-right">
+      <a class="nav-link" href="/groce/terms/id/">Syarat Layanan</a>
+      <a class="nav-link" href="/groce/join">Unduh Aplikasi</a>
+    </nav>
+  </header>
+
+  <main class="page-wrap">
+
+    <div class="legal-header">
+      <h1>Kebijakan Privasi</h1>
+      <p class="effective-date">Tanggal berlaku: 18 Mei 2026</p>
+    </div>
+
+    <p>
+      Groce (&ldquo;kami&rdquo; atau &ldquo;milik kami&rdquo;) adalah aplikasi daftar belanja kolaboratif untuk
+      Android dan iOS. Kebijakan Privasi ini menjelaskan informasi apa yang kami kumpulkan saat Anda menggunakan Groce, cara kami menggunakannya,
+      dan dengan siapa kami membagikannya. Kami telah berusaha menulisnya dalam bahasa yang mudah dipahami &mdash; jika ada yang kurang jelas,
+      silakan hubungi kami di <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a>.
+    </p>
+
+    <h2>1. Informasi yang Kami Kumpulkan</h2>
+
+    <h3>Informasi akun</h3>
+    <p>
+      Ketika Anda membuat akun &mdash; baik dengan email dan kata sandi atau melalui Google Sign-In &mdash; kami menyimpan:
+    </p>
+    <ul>
+      <li>Alamat email Anda</li>
+      <li>Nama tampilan Anda</li>
+      <li>URL foto profil Anda (jika disediakan oleh Google; jika tidak, tidak ada)</li>
+      <li>Stempel waktu konfirmasi usia legal &mdash; dicatat sekali saat pendaftaran ketika Anda menyatakan sendiri bahwa Anda telah mencapai usia legal untuk membeli alkohol, tembakau, dan produk lain yang dibatasi usia di wilayah hukum Anda. Kami tidak mengumpulkan tanggal lahir, dokumen identitas, atau data biometrik Anda.</li>
+    </ul>
+    <p>
+      Informasi ini disimpan di <strong>Firebase Authentication</strong> dan dalam dokumen <code>users</code>
+      di <strong>Cloud Firestore</strong>.
+    </p>
+
+    <h3>Data daftar belanja</h3>
+    <p>Saat Anda menggunakan Groce, kami menyimpan konten yang Anda buat di Cloud Firestore:</p>
+    <ul>
+      <li>Nama daftar dan email pemilik daftar</li>
+      <li>Nama item, jumlah, satuan, kategori, dan status dicentang/tidak dicentang</li>
+      <li>Foto item opsional yang Anda ambil atau pilih dari pustaka foto Anda</li>
+      <li>Nama tampilan orang yang menambahkan setiap item</li>
+    </ul>
+
+    <h3>Data berbagi dan kolaborasi</h3>
+    <p>
+      Ketika Anda berbagi daftar, kami menyimpan alamat email orang yang Anda undang, orang yang telah menerima
+      undangan, dan orang yang telah meminta akses melalui tautan berbagi. Ini diperlukan untuk memberikan akses
+      kolaborator yang tepat ke setiap daftar.
+    </p>
+
+    <h2>2. Informasi yang Tidak Kami Kumpulkan</h2>
+    <ul>
+      <li>Kontak atau buku alamat Anda</li>
+      <li>Lokasi Anda (kami tidak pernah meminta izin lokasi)</li>
+      <li>Analitik penekanan tombol atau penggunaan di luar yang disediakan Firebase secara default</li>
+      <li>Data apa pun dari orang yang belum membuat akun Groce</li>
+    </ul>
+
+    <h2>3. Layanan Pihak Ketiga</h2>
+    <p>Groce terintegrasi dengan beberapa layanan pihak ketiga. Saat Anda menggunakan fitur tertentu, data Anda dikirim ke layanan-layanan ini:</p>
+
+    <h3>Google Firebase (Authentication &amp; Firestore)</h3>
+    <p>
+      Semua akun pengguna dan data belanja disimpan di Google Firebase. Data Anda diproses sesuai dengan
+      <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Kebijakan Privasi Firebase Google</a>.
+    </p>
+
+    <h3>Google Sign-In</h3>
+    <p>
+      Jika Anda masuk dengan Google, kami menerima alamat email, nama, dan URL foto profil akun Google Anda.
+      Kami tidak menerima data akun Google lainnya (misalnya, kontak, Drive, Gmail).
+    </p>
+
+    <h3>Google AdMob</h3>
+    <p>
+      Groce menyertakan Google AdMob untuk menampilkan iklan. AdMob dapat mengumpulkan:
+    </p>
+    <ul>
+      <li>Pengidentifikasi iklan Anda (Google Advertising ID di Android; IDFA di iOS)</li>
+      <li>Informasi perangkat (model, versi OS, bahasa, zona waktu)</li>
+      <li>Alamat IP dan lokasi kasar yang diperoleh dari IP</li>
+    </ul>
+    <p>
+      Lihat <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Kebijakan Privasi Google</a>
+      untuk detail tentang cara AdMob menggunakan data ini.
+    </p>
+
+    <h2>4. Izin Perangkat</h2>
+    <p>Groce meminta izin perangkat berikut dan hanya menggunakannya untuk tujuan yang disebutkan:</p>
+    <ul>
+      <li><strong>Kamera</strong> &mdash; untuk memindai barcode produk dan mengambil foto untuk item belanja.</li>
+      <li><strong>Pustaka foto</strong> &mdash; untuk memungkinkan Anda melampirkan foto yang sudah ada ke item belanja.</li>
+      <li><strong>Internet</strong> &mdash; diperlukan untuk semua fitur (sinkronisasi Firebase, pencarian gambar, dll.).</li>
+    </ul>
+    <p>Kami tidak menggunakan kamera atau pustaka foto untuk verifikasi usia, verifikasi identitas, atau pengumpulan data biometrik dalam bentuk apa pun.</p>
+
+    <h2>5. Cara Kami Menggunakan Informasi Anda</h2>
+    <ul>
+      <li>Untuk membuat dan mengautentikasi akun Anda.</li>
+      <li>Untuk menyimpan, menyinkronkan, dan menampilkan daftar belanja Anda kepada Anda dan kolaborator Anda.</li>
+      <li>Untuk mengaktifkan fitur berbagi (undangan, tautan bergabung, permintaan tertunda).</li>
+      <li>Untuk mengambil informasi produk dan gambar atas nama Anda.</li>
+      <li>Untuk menampilkan iklan melalui AdMob.</li>
+    </ul>
+    <p>Kami tidak menjual informasi pribadi Anda kepada pihak ketiga.</p>
+
+    <h2>6. Berbagi Data Anda dengan Orang Lain</h2>
+    <p>
+      Ketika Anda berbagi daftar belanja dengan orang lain, orang tersebut akan dapat melihat:
+    </p>
+    <ul>
+      <li>Semua item dalam daftar, termasuk siapa yang menambahkan setiap item.</li>
+      <li>Nama tampilan dan alamat email kolaborator lain dalam daftar yang sama.</li>
+    </ul>
+    <p>
+      Hanya orang yang secara eksplisit Anda undang (atau yang Anda setujui setelah mereka meminta akses) yang dapat melihat daftar bersama.
+    </p>
+
+    <h2>7. Penyimpanan dan Penghapusan Data</h2>
+    <p>
+      Daftar belanja dan item Anda tetap ada di Firestore hingga Anda menghapusnya di dalam aplikasi.
+      Jika Anda ingin menghapus akun dan semua data terkait, silakan kunjungi halaman
+      <a href="/groce/delete-account/">Penghapusan Akun</a> kami untuk instruksi; kami akan memproses
+      permintaan Anda dalam 30 hari.
+    </p>
+    <p>
+      Catatan: penghapusan akun mandiri dalam aplikasi belum tersedia. Kami berencana menambahkannya dalam pembaruan mendatang.
+    </p>
+
+    <h2>8. Anak-Anak dan Persyaratan Usia</h2>
+    <p>
+      Groce tidak ditujukan untuk anak-anak di bawah 13 tahun. Kami tidak secara sadar mengumpulkan informasi pribadi dari
+      anak-anak di bawah 13 tahun.
+    </p>
+    <p>
+      Saat pendaftaran, setiap pengguna harus menyatakan sendiri bahwa mereka telah mencapai usia legal untuk membeli alkohol, tembakau, dan
+      produk lain yang dibatasi usia di wilayah hukum mereka. Pengguna yang menolak pernyataan ini tidak dapat menggunakan aplikasi.
+      Kami tidak melakukan pemeriksaan usia berbasis AI, berbasis foto, atau biometrik &mdash; pernyataan tersebut adalah
+      deklarasi diri yang sederhana. Jika Anda yakin kami secara tidak sengaja telah mengumpulkan informasi dari pengguna yang tidak memenuhi syarat,
+      silakan hubungi kami dan kami akan segera menghapusnya.
+    </p>
+
+    <h2>9. Keamanan</h2>
+    <p>
+      Semua data yang dikirimkan antara aplikasi dan Firebase dienkripsi saat transit menggunakan TLS. Data yang disimpan di
+      Firestore dienkripsi saat diam oleh Google. Kami menerapkan aturan keamanan Firebase untuk memastikan pengguna hanya dapat
+      membaca dan menulis data yang mereka otorisasi untuk diakses.
+    </p>
+
+    <h2>10. Perubahan pada Kebijakan Ini</h2>
+    <p>
+      Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Ketika kami melakukannya, kami akan memperbarui tanggal berlaku di
+      bagian atas halaman ini. Penggunaan Groce yang berlanjut setelah perubahan merupakan penerimaan Anda terhadap kebijakan yang diperbarui.
+    </p>
+
+    <div class="contact-block">
+      <p>
+        <strong>Pertanyaan atau permintaan?</strong><br />
+        Hubungi kami di <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a>.
+        Kami berusaha merespons dalam 5 hari kerja.
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/groce/privacy/id/">Kebijakan Privasi</a>
+      <a href="/groce/terms/id/">Syarat Layanan</a>
+      <a href="/groce/join">Unduh Aplikasi</a>
+    </div>
+    <p>&copy; 2026 Groce &mdash; <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Informativa sulla Privacy — Groce</title>
+  <meta name="description" content="Informativa sulla Privacy di Groce — come raccogliamo, utilizziamo e proteggiamo i tuoi dati." />
+  <link rel="stylesheet" href="/groce/assets/styles.css" />
+  <link rel="icon" type="image/webp" href="/groce/assets/logo.webp" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo-link" href="https://groce.araujojordan.com">
+      <img class="header-logo" src="/groce/assets/logo.webp" alt="Groce logo" />
+      <span class="app-name">Groce</span>
+    </a>
+    <nav class="header-right">
+      <a class="nav-link" href="/groce/terms/it/">Termini di Servizio</a>
+      <a class="nav-link" href="/groce/join">Scarica l&rsquo;App</a>
+    </nav>
+  </header>
+
+  <main class="page-wrap">
+
+    <div class="legal-header">
+      <h1>Informativa sulla Privacy</h1>
+      <p class="effective-date">Data di entrata in vigore: 18 maggio 2026</p>
+    </div>
+
+    <p>
+      Groce (&ldquo;noi&rdquo;, &ldquo;ci&rdquo; o &ldquo;nostro&rdquo;) è un&rsquo;app collaborativa per la lista della spesa per
+      Android e iOS. La presente Informativa sulla Privacy spiega quali informazioni raccogliamo quando utilizzi Groce, come le utilizziamo
+      e con chi le condividiamo. Abbiamo cercato di redigerla in un linguaggio semplice &mdash; se qualcosa non è chiaro,
+      contattaci all&rsquo;indirizzo <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a>.
+    </p>
+
+    <h2>1. Informazioni che Raccogliamo</h2>
+
+    <h3>Informazioni sull&rsquo;account</h3>
+    <p>
+      Quando crei un account &mdash; tramite email e password o con Google Sign-In &mdash; archiviamo:
+    </p>
+    <ul>
+      <li>Il tuo indirizzo email</li>
+      <li>Il tuo nome visualizzato</li>
+      <li>L&rsquo;URL della tua foto del profilo (se fornita da Google; altrimenti nessuna)</li>
+      <li>Un timestamp di conferma dell&rsquo;età legale &mdash; registrato una volta al momento della registrazione quando dichiari autonomamente di essere in età legale per acquistare alcolici, tabacco e altri prodotti con restrizione di età nella tua giurisdizione. Non raccogliamo la tua data di nascita, documenti d&rsquo;identità o dati biometrici.</li>
+    </ul>
+    <p>
+      Queste informazioni sono archiviate in <strong>Firebase Authentication</strong> e in un documento <code>users</code>
+      in <strong>Cloud Firestore</strong>.
+    </p>
+
+    <h3>Dati della lista della spesa</h3>
+    <p>Quando utilizzi Groce, archiviamo il contenuto che crei in Cloud Firestore:</p>
+    <ul>
+      <li>I nomi delle liste e l&rsquo;email del proprietario della lista</li>
+      <li>Nomi degli articoli, quantità, unità, categorie e stato di spuntato/non spuntato</li>
+      <li>Foto facoltative degli articoli che acquisisci o selezioni dalla tua libreria fotografica</li>
+      <li>Il nome visualizzato di chi ha aggiunto ciascun articolo</li>
+    </ul>
+
+    <h3>Dati di condivisione e collaborazione</h3>
+    <p>
+      Quando condividi una lista, archiviamo gli indirizzi email delle persone che inviti, delle persone che hanno accettato un
+      invito e delle persone che hanno richiesto accesso tramite un link condiviso. Ciò è necessario per concedere il corretto
+      accesso alla lista ai collaboratori autorizzati.
+    </p>
+
+    <h2>2. Informazioni che Non Raccogliamo</h2>
+    <ul>
+      <li>I tuoi contatti o la tua rubrica</li>
+      <li>La tua posizione (non richiediamo mai il permesso di geolocalizzazione)</li>
+      <li>Analisi dei tasti premuti o dell&rsquo;utilizzo al di là di quanto fornito di default da Firebase</li>
+      <li>Dati di persone che non hanno creato un account Groce</li>
+    </ul>
+
+    <h2>3. Servizi di Terze Parti</h2>
+    <p>Groce si integra con diversi servizi di terze parti. Quando utilizzi determinate funzionalità, i tuoi dati vengono inviati a questi servizi:</p>
+
+    <h3>Google Firebase (Authentication &amp; Firestore)</h3>
+    <p>
+      Tutti gli account utente e i dati della spesa sono archiviati in Google Firebase. I tuoi dati vengono elaborati in conformità con
+      la <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Informativa sulla Privacy di Firebase di Google</a>.
+    </p>
+
+    <h3>Google Sign-In</h3>
+    <p>
+      Se accedi con Google, riceviamo l&rsquo;indirizzo email, il nome e l&rsquo;URL della foto del profilo del tuo account Google.
+      Non riceviamo nessun altro dato del tuo account Google (ad es., contatti, Drive, Gmail).
+    </p>
+
+    <h3>Google AdMob</h3>
+    <p>
+      Groce include Google AdMob per la visualizzazione di annunci pubblicitari. AdMob può raccogliere:
+    </p>
+    <ul>
+      <li>Il tuo identificatore pubblicitario (Google Advertising ID su Android; IDFA su iOS)</li>
+      <li>Informazioni sul dispositivo (modello, versione del sistema operativo, lingua, fuso orario)</li>
+      <li>Indirizzo IP e posizione approssimativa derivata dall&rsquo;IP</li>
+    </ul>
+    <p>
+      Consulta la <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Informativa sulla Privacy di Google</a>
+      per i dettagli su come AdMob utilizza questi dati.
+    </p>
+
+    <h2>4. Autorizzazioni del Dispositivo</h2>
+    <p>Groce richiede le seguenti autorizzazioni del dispositivo e le utilizza esclusivamente per lo scopo indicato:</p>
+    <ul>
+      <li><strong>Fotocamera</strong> &mdash; per scansionare i codici a barre dei prodotti e per acquisire foto degli articoli della spesa.</li>
+      <li><strong>Libreria fotografica</strong> &mdash; per consentirti di allegare una foto esistente a un articolo della spesa.</li>
+      <li><strong>Internet</strong> &mdash; necessario per tutte le funzionalità (sincronizzazione Firebase, ricerca immagini, ecc.).</li>
+    </ul>
+    <p>Non utilizziamo la fotocamera o la libreria fotografica per la verifica dell&rsquo;età, la verifica dell&rsquo;identità o la raccolta di dati biometrici di alcun tipo.</p>
+
+    <h2>5. Come Utilizziamo le Tue Informazioni</h2>
+    <ul>
+      <li>Per creare e autenticare il tuo account.</li>
+      <li>Per archiviare, sincronizzare e visualizzare le tue liste della spesa a te e ai tuoi collaboratori.</li>
+      <li>Per abilitare le funzionalità di condivisione (inviti, link di accesso, richieste in sospeso).</li>
+      <li>Per recuperare informazioni e immagini sui prodotti per tuo conto.</li>
+      <li>Per visualizzare annunci pubblicitari tramite AdMob.</li>
+    </ul>
+    <p>Non vendiamo le tue informazioni personali a terze parti.</p>
+
+    <h2>6. Condivisione dei Tuoi Dati con Altri</h2>
+    <p>
+      Quando condividi una lista della spesa con un&rsquo;altra persona, quella persona potrà vedere:
+    </p>
+    <ul>
+      <li>Tutti gli articoli nella lista, incluso chi ha aggiunto ciascun articolo.</li>
+      <li>I nomi visualizzati e gli indirizzi email degli altri collaboratori della stessa lista.</li>
+    </ul>
+    <p>
+      Solo le persone che inviti esplicitamente (o che approvi dopo che hanno richiesto accesso) possono vedere una lista condivisa.
+    </p>
+
+    <h2>7. Conservazione e Cancellazione dei Dati</h2>
+    <p>
+      Le tue liste della spesa e gli articoli rimangono in Firestore finché non li elimini all&rsquo;interno dell&rsquo;app.
+      Se desideri eliminare il tuo account e tutti i dati associati, visita la nostra pagina di
+      <a href="/groce/delete-account/">Cancellazione dell&rsquo;Account</a> per le istruzioni; elaboreremo
+      la tua richiesta entro 30 giorni.
+    </p>
+    <p>
+      Nota: la cancellazione autonoma dell&rsquo;account dall&rsquo;interno dell&rsquo;app non è ancora disponibile. Prevediamo di aggiungerla in un aggiornamento futuro.
+    </p>
+
+    <h2>8. Minori e Requisiti di Età</h2>
+    <p>
+      Groce non è destinata a bambini di età inferiore ai 13 anni. Non raccogliamo consapevolmente informazioni personali da
+      bambini di età inferiore ai 13 anni.
+    </p>
+    <p>
+      Al momento della registrazione, ogni utente deve dichiarare autonomamente di essere in età legale per acquistare alcolici, tabacco e
+      altri prodotti con restrizione di età nella propria giurisdizione. Gli utenti che rifiutano questa dichiarazione non possono utilizzare l&rsquo;app.
+      Non eseguiamo controlli sull&rsquo;età basati su intelligenza artificiale, foto o dati biometrici &mdash; la dichiarazione è una semplice
+      autocertificazione. Se ritieni che abbiamo raccolto inavvertitamente informazioni da un utente non idoneo,
+      contattaci e le elimineremo tempestivamente.
+    </p>
+
+    <h2>9. Sicurezza</h2>
+    <p>
+      Tutti i dati trasmessi tra l&rsquo;app e Firebase sono crittografati in transito tramite TLS. I dati archiviati in
+      Firestore sono crittografati a riposo da Google. Applichiamo le regole di sicurezza di Firebase per garantire che gli utenti possano leggere e scrivere solo
+      i dati a cui sono autorizzati ad accedere.
+    </p>
+
+    <h2>10. Modifiche alla Presente Informativa</h2>
+    <p>
+      Potremmo aggiornare la presente Informativa sulla Privacy di tanto in tanto. Quando lo faremo, aggiorneremo la data di entrata in vigore nella parte superiore
+      di questa pagina. L&rsquo;uso continuato di Groce dopo una modifica costituisce la tua accettazione dell&rsquo;informativa aggiornata.
+    </p>
+
+    <div class="contact-block">
+      <p>
+        <strong>Domande o richieste?</strong><br />
+        Contattaci all&rsquo;indirizzo <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a>.
+        Ci impegniamo a rispondere entro 5 giorni lavorativi.
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/groce/privacy/it/">Informativa sulla Privacy</a>
+      <a href="/groce/terms/it/">Termini di Servizio</a>
+      <a href="/groce/join">Scarica l&rsquo;App</a>
+    </div>
+    <p>&copy; 2026 Groce &mdash; <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a></p>
+  </footer>
+
+</body>
+</html>

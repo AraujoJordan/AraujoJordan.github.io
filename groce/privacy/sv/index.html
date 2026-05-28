@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Integritetspolicy &mdash; Groce</title>
+  <meta name="description" content="Groce Integritetspolicy &mdash; hur vi samlar in, anv&auml;nder och skyddar dina uppgifter." />
+  <link rel="stylesheet" href="/groce/assets/styles.css" />
+  <link rel="icon" type="image/webp" href="/groce/assets/logo.webp" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo-link" href="https://groce.araujojordan.com">
+      <img class="header-logo" src="/groce/assets/logo.webp" alt="Groce logo" />
+      <span class="app-name">Groce</span>
+    </a>
+    <nav class="header-right">
+      <a class="nav-link" href="/groce/terms/sv/">Anv&auml;ndarvillkor</a>
+      <a class="nav-link" href="/groce/join">H&auml;mta appen</a>
+    </nav>
+  </header>
+
+  <main class="page-wrap">
+
+    <div class="legal-header">
+      <h1>Integritetspolicy</h1>
+      <p class="effective-date">G&auml;ller fr&aring;n: 18 maj 2026</p>
+    </div>
+
+    <p>
+      Groce (&ldquo;vi&rdquo;, &ldquo;oss&rdquo; eller &ldquo;v&aring;r&rdquo;) &auml;r en samarbetsbaserad matink&ouml;pslisteapp f&ouml;r
+      Android och iOS. Denna integritetspolicy f&ouml;rklarar vilken information vi samlar in n&auml;r du anv&auml;nder Groce, hur vi anv&auml;nder den,
+      och med vem vi delar den. Vi har f&ouml;rs&ouml;kt skriva detta p&aring; ett tydligt spr&aring;k &mdash; om n&aring;got &auml;r oklart,
+      kontakta oss p&aring; <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a>.
+    </p>
+
+    <h2>1. Vilken information vi samlar in</h2>
+
+    <h3>Kontoinformation</h3>
+    <p>
+      N&auml;r du skapar ett konto &mdash; antingen med en e-postadress och ett l&ouml;senord eller via Google Sign-In &mdash; lagrar vi:
+    </p>
+    <ul>
+      <li>Din e-postadress</li>
+      <li>Ditt visningsnamn</li>
+      <li>Din profilbild-URL (om den tillhandah&aring;lls av Google; annars ingen)</li>
+      <li>En tidsstampel f&ouml;r &aring;ldersbekr&auml;ftelse &mdash; registrerad en g&aring;ng vid registreringen n&auml;r du sj&auml;lv intygar att du &auml;r myndig att k&ouml;pa alkohol, tobak och andra &aring;ldersbegr&auml;nsade produkter i din jurisdiktion. Vi samlar inte in ditt f&ouml;delsedatum, identitetshandlingar eller biometriska data.</li>
+    </ul>
+    <p>
+      Denna information lagras i <strong>Firebase Authentication</strong> och i ett <code>users</code>-dokument
+      i <strong>Cloud Firestore</strong>.
+    </p>
+
+    <h3>Matink&ouml;pslistedata</h3>
+    <p>N&auml;r du anv&auml;nder Groce lagrar vi det inneh&aring;ll du skapar i Cloud Firestore:</p>
+    <ul>
+      <li>Listnamn och e-postadressen till listans &auml;gare</li>
+      <li>Artikelnamn, m&auml;ngder, enheter, kategorier och ikryssad/ej ikryssad status</li>
+      <li>Valfria artikelfoton som du tar eller v&auml;ljer fr&aring;n ditt fotobibliotek</li>
+      <li>Visningsnamnet p&aring; den som lade till varje artikel</li>
+    </ul>
+
+    <h3>Delnings- och samarbetsdata</h3>
+    <p>
+      N&auml;r du delar en lista lagrar vi e-postadresserna till personer du bjuder in, personer som har accepterat en
+      inbjudan och personer som har beg&auml;rt &aring;tkomst via en delad l&auml;nk. Detta &auml;r n&ouml;dv&auml;ndigt f&ouml;r att ge de r&auml;tta
+      samarbetspartnerna &aring;tkomst till varje lista.
+    </p>
+
+    <h2>2. Vad vi inte samlar in</h2>
+    <ul>
+      <li>Dina kontakter eller adressbok</li>
+      <li>Din plats (vi beg&auml;r aldrig platstillst&aring;nd)</li>
+      <li>Tangentslags- eller anv&auml;ndningsanalys utanf&ouml;r vad Firebase tillhandah&aring;ller som standard</li>
+      <li>Uppgifter fr&aring;n personer som inte har skapat ett Groce-konto</li>
+    </ul>
+
+    <h2>3. Tredjepartstj&auml;nster</h2>
+    <p>Groce integrerar med flera tredjepartstj&auml;nster. N&auml;r du anv&auml;nder vissa funktioner skickas dina uppgifter till dessa tj&auml;nster:</p>
+
+    <h3>Google Firebase (Authentication &amp; Firestore)</h3>
+    <p>
+      Alla anv&auml;ndarkonton och matink&ouml;psdata lagras i Google Firebase. Dina uppgifter behandlas enligt
+      <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Googles Firebase Integritetspolicy</a>.
+    </p>
+
+    <h3>Google Sign-In</h3>
+    <p>
+      Om du loggar in med Google tar vi emot din Google-kontos e-postadress, namn och profilbild-URL.
+      Vi tar inte emot n&aring;gra andra Google-kontouppgifter (t.ex. kontakter, Drive, Gmail).
+    </p>
+
+    <h3>Google AdMob</h3>
+    <p>
+      Groce inneh&aring;ller Google AdMob f&ouml;r att visa annonser. AdMob kan samla in:
+    </p>
+    <ul>
+      <li>Din annonsidentifierare (Google Advertising ID p&aring; Android; IDFA p&aring; iOS)</li>
+      <li>Enhetsinformation (modell, OS-version, spr&aring;k, tidszon)</li>
+      <li>IP-adress och ungef&auml;rlig plats h&auml;rledd fr&aring;n IP</li>
+    </ul>
+    <p>
+      Se <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Googles Integritetspolicy</a>
+      f&ouml;r detaljer om hur AdMob anv&auml;nder dessa uppgifter.
+    </p>
+
+    <h2>4. Enhetsbeh&ouml;righeter</h2>
+    <p>Groce beg&auml;r f&ouml;ljande enhetsbeh&ouml;righeter och anv&auml;nder dem enbart f&ouml;r det angivna &auml;ndam&aring;let:</p>
+    <ul>
+      <li><strong>Kamera</strong> &mdash; f&ouml;r att skanna produktstreckkoder och ta foton f&ouml;r matink&ouml;psartiklar.</li>
+      <li><strong>Fotobibliotek</strong> &mdash; f&ouml;r att l&aring;ta dig bifoga ett befintligt foto till en matink&ouml;psartikel.</li>
+      <li><strong>Internet</strong> &mdash; kr&auml;vs f&ouml;r alla funktioner (Firebase-synkronisering, bilds&ouml;kning, osv.).</li>
+    </ul>
+    <p>Vi anv&auml;nder inte kameran eller fotobiblioteket f&ouml;r &aring;ldersverifiering, identitetsverifiering eller biometrisk datainsamling av n&aring;got slag.</p>
+
+    <h2>5. Hur vi anv&auml;nder din information</h2>
+    <ul>
+      <li>F&ouml;r att skapa och autentisera ditt konto.</li>
+      <li>F&ouml;r att lagra, synkronisera och visa dina matink&ouml;pslistor f&ouml;r dig och dina samarbetspartners.</li>
+      <li>F&ouml;r att m&ouml;jligg&ouml;ra delningsfunktioner (inbjudningar, anslutningsl&auml;nkar, v&auml;ntande beg&auml;randen).</li>
+      <li>F&ouml;r att h&auml;mta produktinformation och bilder p&aring; dina v&auml;gnar.</li>
+      <li>F&ouml;r att visa annonser via AdMob.</li>
+    </ul>
+    <p>Vi s&auml;ljer inte dina personuppgifter till tredje part.</p>
+
+    <h2>6. Dela dina uppgifter med andra</h2>
+    <p>
+      N&auml;r du delar en matink&ouml;pslista med en annan person kommer den personen att kunna se:
+    </p>
+    <ul>
+      <li>Alla artiklar i listan, inklusive vem som lade till varje artikel.</li>
+      <li>Visningsnamnen och e-postadresserna till andra samarbetspartners p&aring; samma lista.</li>
+    </ul>
+    <p>
+      Endast personer som du uttryckligen bjuder in (eller som du godk&auml;nner efter att de beg&auml;r &aring;tkomst) kan se en delad lista.
+    </p>
+
+    <h2>7. Datalagring och radering</h2>
+    <p>
+      Dina matink&ouml;pslistor och artiklar finns kvar i Firestore tills du raderar dem i appen.
+      Om du vill radera ditt konto och alla tillh&ouml;rande uppgifter, bes&ouml;k v&aring;r
+      <a href="/groce/delete-account/">Kontoborttagning</a>-sida f&ouml;r instruktioner; vi kommer att behandla
+      din beg&auml;ran inom 30 dagar.
+    </p>
+    <p>
+      Obs: sj&auml;lvradering av konto i appen &auml;r &auml;nnu inte tillg&auml;ngligt. Vi planerar att l&auml;gga till det i en framtida uppdatering.
+    </p>
+
+    <h2>8. Barn och &aring;lderskrav</h2>
+    <p>
+      Groce &auml;r inte riktat till barn under 13 &aring;r. Vi samlar inte medvetet in personuppgifter fr&aring;n
+      barn under 13 &aring;r.
+    </p>
+    <p>
+      Vid registreringen m&aring;ste varje anv&auml;ndare sj&auml;lv intyga att de &auml;r myndig att k&ouml;pa alkohol, tobak och
+      andra &aring;ldersbegr&auml;nsade produkter i sin jurisdiktion. Anv&auml;ndare som avs&auml;ger sig detta intyg kan inte anv&auml;nda appen.
+      Vi utf&ouml;r inga AI-baserade, fotobaserade eller biometriska &aring;lderskontroller &mdash; intyget &auml;r en enkel
+      sj&auml;lvdeklaration. Om du tror att vi av misstag har samlat in information fr&aring;n en obeh&ouml;rig anv&auml;ndare,
+      kontakta oss s&aring; raderar vi det omedelbart.
+    </p>
+
+    <h2>9. S&auml;kerhet</h2>
+    <p>
+      All data som &ouml;verf&ouml;rs mellan appen och Firebase &auml;r krypterad under transport med TLS. Data lagrad i
+      Firestore &auml;r krypterad i vila av Google. Vi till&auml;mpar Firebase-s&auml;kerhetsregler f&ouml;r att s&auml;kerst&auml;lla att anv&auml;ndare bara kan
+      l&auml;sa och skriva data de &auml;r beh&ouml;riga att &aring;tkomma.
+    </p>
+
+    <h2>10. &Auml;ndringar av denna policy</h2>
+    <p>
+      Vi kan uppdatera denna integritetspolicy fr&aring;n tid till annan. N&auml;r vi g&ouml;r det uppdaterar vi det g&auml;llande datumet l&auml;ngst upp p&aring;
+      den h&auml;r sidan. Forts&auml;tt anv&auml;ndning av Groce efter en &auml;ndring utg&ouml;r ditt godk&auml;nnande av den uppdaterade policyn.
+    </p>
+
+    <div class="contact-block">
+      <p>
+        <strong>Fr&aring;gor eller beg&auml;randen?</strong><br />
+        Kontakta oss p&aring; <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a>.
+        Vi str&auml;var efter att svara inom 5 arbetsdagar.
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/groce/privacy/sv/">Integritetspolicy</a>
+      <a href="/groce/terms/sv/">Anv&auml;ndarvillkor</a>
+      <a href="/groce/join">H&auml;mta appen</a>
+    </div>
+    <p>&copy; 2026 Groce &mdash; <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a></p>
+  </footer>
+
+</body>
+</html>

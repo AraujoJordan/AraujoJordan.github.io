@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>プライバシーポリシー — Groce</title>
+  <meta name="description" content="Groce プライバシーポリシー — データの収集、使用、および保護について。" />
+  <link rel="stylesheet" href="/groce/assets/styles.css" />
+  <link rel="icon" type="image/webp" href="/groce/assets/logo.webp" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo-link" href="https://groce.araujojordan.com">
+      <img class="header-logo" src="/groce/assets/logo.webp" alt="Groce ロゴ" />
+      <span class="app-name">Groce</span>
+    </a>
+    <nav class="header-right">
+      <a class="nav-link" href="/groce/terms/ja/">利用規約</a>
+      <a class="nav-link" href="/groce/join">アプリを入手</a>
+    </nav>
+  </header>
+
+  <main class="page-wrap">
+
+    <div class="legal-header">
+      <h1>プライバシーポリシー</h1>
+      <p class="effective-date">発効日：2026年5月18日</p>
+    </div>
+
+    <p>
+      Groce（&ldquo;私たち&rdquo;、&ldquo;当社&rdquo;、または &ldquo;弊社&rdquo;）は Android および iOS 向けの共同買い物リストアプリです。
+      このプライバシーポリシーでは、Groce を使用する際に収集する情報、その使用方法、および共有先について説明します。
+      できるだけ平易な言葉で記述しておりますが、不明な点がございましたら
+      <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a> までお問い合わせください。
+    </p>
+
+    <h2>1. 収集する情報</h2>
+
+    <h3>アカウント情報</h3>
+    <p>
+      メールアドレスとパスワード、または Google サインインでアカウントを作成する際、以下の情報を保存します：
+    </p>
+    <ul>
+      <li>メールアドレス</li>
+      <li>表示名</li>
+      <li>プロフィール写真の URL（Google から提供された場合のみ。それ以外はなし）</li>
+      <li>法定年齢確認のタイムスタンプ — 登録時にお住まいの地域でアルコール、タバコ、その他の年齢制限商品を購入できる法定年齢に達していると自己申告した際に一度記録されます。生年月日、身分証明書、または生体認証データは収集しません。</li>
+    </ul>
+    <p>
+      この情報は <strong>Firebase Authentication</strong> および <strong>Cloud Firestore</strong> の <code>users</code> ドキュメントに保存されます。
+    </p>
+
+    <h3>買い物リストデータ</h3>
+    <p>Groce を使用すると、作成したコンテンツが Cloud Firestore に保存されます：</p>
+    <ul>
+      <li>リスト名およびリストオーナーのメールアドレス</li>
+      <li>アイテム名、数量、単位、カテゴリ、チェック済み/未チェックの状態</li>
+      <li>カメラで撮影またはフォトライブラリから選択したオプションのアイテム写真</li>
+      <li>各アイテムを追加した人の表示名</li>
+    </ul>
+
+    <h3>共有とコラボレーションデータ</h3>
+    <p>
+      リストを共有する際、招待した人、招待を承認した人、および共有リンクを通じてアクセスをリクエストした人のメールアドレスを保存します。
+      これは各リストへの正しい協力者のアクセスを許可するために必要です。
+    </p>
+
+    <h2>2. 収集しない情報</h2>
+    <ul>
+      <li>連絡先やアドレス帳</li>
+      <li>位置情報（位置情報の許可をリクエストすることはありません）</li>
+      <li>Firebase がデフォルトで提供する以外のキーストロークまたは使用状況の分析</li>
+      <li>Groce アカウントを作成していない人のデータ</li>
+    </ul>
+
+    <h2>3. サードパーティサービス</h2>
+    <p>Groce はいくつかのサードパーティサービスと連携しています。特定の機能を使用すると、データがこれらのサービスに送信されます：</p>
+
+    <h3>Google Firebase（Authentication &amp; Firestore）</h3>
+    <p>
+      すべてのユーザーアカウントと買い物データは Google Firebase に保存されます。お客様のデータは
+      <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Google の Firebase プライバシーポリシー</a>に従って処理されます。
+    </p>
+
+    <h3>Google サインイン</h3>
+    <p>
+      Google でサインインした場合、Google アカウントのメールアドレス、名前、プロフィール写真 URL を受け取ります。
+      その他の Google アカウントデータ（例：連絡先、Drive、Gmail）は受け取りません。
+    </p>
+
+    <h3>Google AdMob</h3>
+    <p>
+      Groce は広告を表示するために Google AdMob を使用しています。AdMob は以下を収集する場合があります：
+    </p>
+    <ul>
+      <li>広告識別子（Android では Google Advertising ID、iOS では IDFA）</li>
+      <li>デバイス情報（機種、OS バージョン、言語、タイムゾーン）</li>
+      <li>IP アドレスおよび IP から推定される大まかな位置情報</li>
+    </ul>
+    <p>
+      AdMob がこのデータをどのように使用するかの詳細については、
+      <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google のプライバシーポリシー</a>をご覧ください。
+    </p>
+
+    <h2>4. デバイスの権限</h2>
+    <p>Groce は以下のデバイス権限をリクエストし、記載された目的のみに使用します：</p>
+    <ul>
+      <li><strong>カメラ</strong> — 商品バーコードをスキャンし、買い物アイテムの写真を撮影するため。</li>
+      <li><strong>フォトライブラリ</strong> — 既存の写真を買い物アイテムに添付するため。</li>
+      <li><strong>インターネット</strong> — すべての機能（Firebase 同期、画像検索など）に必要。</li>
+    </ul>
+    <p>年齢確認、本人確認、またはいかなる種類の生体認証データの収集にもカメラやフォトライブラリを使用しません。</p>
+
+    <h2>5. 情報の使用方法</h2>
+    <ul>
+      <li>アカウントを作成し認証するため。</li>
+      <li>買い物リストをあなたと協力者に保存、同期、表示するため。</li>
+      <li>共有機能（招待、参加リンク、保留中のリクエスト）を有効にするため。</li>
+      <li>お客様に代わって商品情報と画像を取得するため。</li>
+      <li>AdMob を通じて広告を表示するため。</li>
+    </ul>
+    <p>お客様の個人情報を第三者に販売することはありません。</p>
+
+    <h2>6. 他者とのデータ共有</h2>
+    <p>
+      買い物リストを別の人と共有すると、その人は以下を確認できます：
+    </p>
+    <ul>
+      <li>各アイテムを追加した人を含む、リスト内のすべてのアイテム。</li>
+      <li>同じリスト上の他の協力者の表示名とメールアドレス。</li>
+    </ul>
+    <p>
+      明示的に招待した人（またはアクセスをリクエストした後に承認した人）のみが共有リストを確認できます。
+    </p>
+
+    <h2>7. データの保持と削除</h2>
+    <p>
+      買い物リストとアイテムは、アプリ内で削除するまで Firestore に保存されます。
+      アカウントおよびすべての関連データを削除したい場合は、
+      <a href="/groce/delete-account/">アカウント削除</a>ページの手順をご覧ください。リクエストは30日以内に処理します。
+    </p>
+    <p>
+      注意：アプリ内でのアカウント自己削除はまだ利用できません。今後のアップデートで追加する予定です。
+    </p>
+
+    <h2>8. 子どもと年齢要件</h2>
+    <p>
+      Groce は13歳未満の子どもを対象としていません。13歳未満の子どもから故意に個人情報を収集することはありません。
+    </p>
+    <p>
+      登録時、すべてのユーザーはお住まいの地域でアルコール、タバコ、その他の年齢制限商品を購入できる法定年齢に達していることを自己申告する必要があります。
+      この申告を拒否したユーザーはアプリを使用できません。AI ベース、写真ベース、または生体認証による年齢確認は行いません。申告は単純な自己宣言です。
+      対象外のユーザーから誤って情報を収集したと思われる場合は、ご連絡いただければ速やかに削除いたします。
+    </p>
+
+    <h2>9. セキュリティ</h2>
+    <p>
+      アプリと Firebase 間で送信されるすべてのデータは TLS を使用してトランジット時に暗号化されます。
+      Firestore に保存されたデータは Google によって保存時に暗号化されます。
+      ユーザーが許可されたデータのみを読み書きできるように Firebase セキュリティルールを適用しています。
+    </p>
+
+    <h2>10. ポリシーの変更</h2>
+    <p>
+      このプライバシーポリシーは随時更新することがあります。更新した場合、このページ上部の発効日を更新します。
+      変更後も Groce を継続して使用することは、更新されたポリシーへの同意を意味します。
+    </p>
+
+    <div class="contact-block">
+      <p>
+        <strong>ご質問やリクエストはこちら：</strong><br />
+        <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a> までお問い合わせください。
+        5営業日以内にご返答することを目指しております。
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/groce/privacy/ja/">プライバシーポリシー</a>
+      <a href="/groce/terms/ja/">利用規約</a>
+      <a href="/groce/join">アプリを入手</a>
+    </div>
+    <p>&copy; 2026 Groce &mdash; <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a></p>
+  </footer>
+
+</body>
+</html>

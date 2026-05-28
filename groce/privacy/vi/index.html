@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chính sách Bảo mật — Groce</title>
+  <meta name="description" content="Chính sách Bảo mật của Groce — cách chúng tôi thu thập, sử dụng và bảo vệ dữ liệu của bạn." />
+  <link rel="stylesheet" href="/groce/assets/styles.css" />
+  <link rel="icon" type="image/webp" href="/groce/assets/logo.webp" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo-link" href="https://groce.araujojordan.com">
+      <img class="header-logo" src="/groce/assets/logo.webp" alt="Groce logo" />
+      <span class="app-name">Groce</span>
+    </a>
+    <nav class="header-right">
+      <a class="nav-link" href="/groce/terms/vi/">Điều khoản Dịch vụ</a>
+      <a class="nav-link" href="/groce/join">Tải ứng dụng</a>
+    </nav>
+  </header>
+
+  <main class="page-wrap">
+
+    <div class="legal-header">
+      <h1>Chính sách Bảo mật</h1>
+      <p class="effective-date">Ngày có hiệu lực: 18 tháng 5, 2026</p>
+    </div>
+
+    <p>
+      Groce (&ldquo;chúng tôi&rdquo; hoặc &ldquo;của chúng tôi&rdquo;) là ứng dụng danh sách mua sắm cộng tác cho
+      Android và iOS. Chính sách Bảo mật này giải thích thông tin chúng tôi thu thập khi bạn sử dụng Groce, cách chúng tôi sử dụng nó
+      và với ai chúng tôi chia sẻ nó. Chúng tôi đã cố gắng viết điều này bằng ngôn ngữ đơn giản &mdash; nếu có điều gì không rõ ràng,
+      vui lòng liên hệ với chúng tôi tại <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a>.
+    </p>
+
+    <h2>1. Thông tin Chúng tôi Thu thập</h2>
+
+    <h3>Thông tin tài khoản</h3>
+    <p>
+      Khi bạn tạo tài khoản &mdash; bằng email và mật khẩu hoặc qua Google Sign-In &mdash; chúng tôi lưu trữ:
+    </p>
+    <ul>
+      <li>Địa chỉ email của bạn</li>
+      <li>Tên hiển thị của bạn</li>
+      <li>URL ảnh hồ sơ của bạn (nếu Google cung cấp; nếu không thì không có)</li>
+      <li>Dấu thời gian xác nhận độ tuổi hợp pháp &mdash; được ghi lại một lần khi đăng ký khi bạn tự xác nhận rằng bạn đủ tuổi hợp pháp để mua rượu, thuốc lá và các sản phẩm bị hạn chế theo độ tuổi khác tại khu vực pháp lý của bạn. Chúng tôi không thu thập ngày sinh, tài liệu nhận dạng hoặc dữ liệu sinh trắc học của bạn.</li>
+    </ul>
+    <p>
+      Thông tin này được lưu trữ trong <strong>Firebase Authentication</strong> và trong một tài liệu <code>users</code>
+      trong <strong>Cloud Firestore</strong>.
+    </p>
+
+    <h3>Dữ liệu danh sách mua sắm</h3>
+    <p>Khi bạn sử dụng Groce, chúng tôi lưu trữ nội dung bạn tạo trong Cloud Firestore:</p>
+    <ul>
+      <li>Tên danh sách và email của chủ sở hữu danh sách</li>
+      <li>Tên mục, số lượng, đơn vị, danh mục và trạng thái đã chọn/chưa chọn</li>
+      <li>Ảnh mục tùy chọn bạn chụp hoặc chọn từ thư viện ảnh của mình</li>
+      <li>Tên hiển thị của người đã thêm từng mục</li>
+    </ul>
+
+    <h3>Dữ liệu chia sẻ và cộng tác</h3>
+    <p>
+      Khi bạn chia sẻ danh sách, chúng tôi lưu trữ địa chỉ email của những người bạn mời, những người đã chấp nhận lời mời
+      và những người đã yêu cầu quyền truy cập qua liên kết được chia sẻ. Điều này là cần thiết để cấp quyền truy cập chính xác
+      cho các cộng tác viên vào từng danh sách.
+    </p>
+
+    <h2>2. Thông tin Chúng tôi Không Thu thập</h2>
+    <ul>
+      <li>Danh bạ hoặc sổ địa chỉ của bạn</li>
+      <li>Vị trí của bạn (chúng tôi không bao giờ yêu cầu quyền truy cập vị trí)</li>
+      <li>Phân tích thao tác bàn phím hoặc sử dụng ngoài những gì Firebase cung cấp theo mặc định</li>
+      <li>Bất kỳ dữ liệu nào từ những người chưa tạo tài khoản Groce</li>
+    </ul>
+
+    <h2>3. Dịch vụ Bên thứ ba</h2>
+    <p>Groce tích hợp với một số dịch vụ bên thứ ba. Khi bạn sử dụng các tính năng nhất định, dữ liệu của bạn được gửi đến các dịch vụ này:</p>
+
+    <h3>Google Firebase (Authentication &amp; Firestore)</h3>
+    <p>
+      Tất cả tài khoản người dùng và dữ liệu mua sắm được lưu trữ trong Google Firebase. Dữ liệu của bạn được xử lý theo
+      <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Chính sách Bảo mật Firebase của Google</a>.
+    </p>
+
+    <h3>Google Sign-In</h3>
+    <p>
+      Nếu bạn đăng nhập bằng Google, chúng tôi nhận được địa chỉ email, tên và URL ảnh hồ sơ tài khoản Google của bạn.
+      Chúng tôi không nhận bất kỳ dữ liệu tài khoản Google nào khác (ví dụ: danh bạ, Drive, Gmail).
+    </p>
+
+    <h3>Google AdMob</h3>
+    <p>
+      Groce bao gồm Google AdMob để hiển thị quảng cáo. AdMob có thể thu thập:
+    </p>
+    <ul>
+      <li>Mã nhận dạng quảng cáo của bạn (Google Advertising ID trên Android; IDFA trên iOS)</li>
+      <li>Thông tin thiết bị (kiểu máy, phiên bản hệ điều hành, ngôn ngữ, múi giờ)</li>
+      <li>Địa chỉ IP và vị trí thô được suy ra từ IP</li>
+    </ul>
+    <p>
+      Xem <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Chính sách Bảo mật của Google</a>
+      để biết chi tiết về cách AdMob sử dụng dữ liệu này.
+    </p>
+
+    <h2>4. Quyền Thiết bị</h2>
+    <p>Groce yêu cầu các quyền thiết bị sau và chỉ sử dụng chúng cho mục đích được nêu:</p>
+    <ul>
+      <li><strong>Camera</strong> &mdash; để quét mã vạch sản phẩm và chụp ảnh cho các mục mua sắm.</li>
+      <li><strong>Thư viện ảnh</strong> &mdash; để cho phép bạn đính kèm ảnh hiện có vào một mục mua sắm.</li>
+      <li><strong>Internet</strong> &mdash; bắt buộc cho tất cả các tính năng (đồng bộ Firebase, tìm kiếm hình ảnh, v.v.).</li>
+    </ul>
+    <p>Chúng tôi không sử dụng camera hoặc thư viện ảnh để xác minh độ tuổi, xác minh danh tính hoặc thu thập dữ liệu sinh trắc học dưới bất kỳ hình thức nào.</p>
+
+    <h2>5. Cách Chúng tôi Sử dụng Thông tin của Bạn</h2>
+    <ul>
+      <li>Để tạo và xác thực tài khoản của bạn.</li>
+      <li>Để lưu trữ, đồng bộ hóa và hiển thị danh sách mua sắm của bạn cho bạn và các cộng tác viên của bạn.</li>
+      <li>Để kích hoạt các tính năng chia sẻ (lời mời, liên kết tham gia, yêu cầu đang chờ xử lý).</li>
+      <li>Để tìm kiếm thông tin và hình ảnh sản phẩm thay mặt bạn.</li>
+      <li>Để hiển thị quảng cáo qua AdMob.</li>
+    </ul>
+    <p>Chúng tôi không bán thông tin cá nhân của bạn cho bên thứ ba.</p>
+
+    <h2>6. Chia sẻ Dữ liệu của Bạn với Người khác</h2>
+    <p>
+      Khi bạn chia sẻ danh sách mua sắm với người khác, người đó sẽ có thể xem:
+    </p>
+    <ul>
+      <li>Tất cả các mục trong danh sách, bao gồm ai đã thêm từng mục.</li>
+      <li>Tên hiển thị và địa chỉ email của các cộng tác viên khác trong cùng danh sách.</li>
+    </ul>
+    <p>
+      Chỉ những người bạn mời rõ ràng (hoặc những người bạn phê duyệt sau khi họ yêu cầu quyền truy cập) mới có thể xem danh sách được chia sẻ.
+    </p>
+
+    <h2>7. Lưu giữ và Xóa Dữ liệu</h2>
+    <p>
+      Danh sách mua sắm và các mục của bạn vẫn còn trong Firestore cho đến khi bạn xóa chúng trong ứng dụng.
+      Nếu bạn muốn xóa tài khoản và tất cả dữ liệu liên quan, vui lòng truy cập trang
+      <a href="/groce/delete-account/">Xóa Tài khoản</a> của chúng tôi để được hướng dẫn; chúng tôi sẽ xử lý
+      yêu cầu của bạn trong vòng 30 ngày.
+    </p>
+    <p>
+      Lưu ý: chức năng tự xóa tài khoản trong ứng dụng chưa có sẵn. Chúng tôi có kế hoạch thêm tính năng này trong bản cập nhật tương lai.
+    </p>
+
+    <h2>8. Trẻ em và Yêu cầu Độ tuổi</h2>
+    <p>
+      Groce không hướng đến trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin cá nhân từ
+      trẻ em dưới 13 tuổi.
+    </p>
+    <p>
+      Khi đăng ký, mỗi người dùng phải tự xác nhận rằng họ đủ tuổi hợp pháp để mua rượu, thuốc lá và
+      các sản phẩm bị hạn chế theo độ tuổi khác tại khu vực pháp lý của họ. Người dùng từ chối xác nhận này không thể sử dụng ứng dụng.
+      Chúng tôi không thực hiện kiểm tra độ tuổi dựa trên AI, ảnh hoặc sinh trắc học &mdash; xác nhận là một
+      tự khai báo đơn giản. Nếu bạn tin rằng chúng tôi đã vô tình thu thập thông tin từ người dùng không đủ điều kiện,
+      vui lòng liên hệ với chúng tôi và chúng tôi sẽ xóa ngay.
+    </p>
+
+    <h2>9. Bảo mật</h2>
+    <p>
+      Tất cả dữ liệu được truyền giữa ứng dụng và Firebase được mã hóa trong quá trình truyền bằng TLS. Dữ liệu được lưu trữ trong
+      Firestore được Google mã hóa khi lưu trữ. Chúng tôi áp dụng các quy tắc bảo mật Firebase để đảm bảo người dùng chỉ có thể
+      đọc và ghi dữ liệu họ được ủy quyền truy cập.
+    </p>
+
+    <h2>10. Thay đổi Chính sách này</h2>
+    <p>
+      Chúng tôi có thể cập nhật Chính sách Bảo mật này theo thời gian. Khi thực hiện, chúng tôi sẽ cập nhật ngày có hiệu lực ở
+      đầu trang này. Việc tiếp tục sử dụng Groce sau một thay đổi cấu thành sự chấp nhận của bạn đối với chính sách đã cập nhật.
+    </p>
+
+    <div class="contact-block">
+      <p>
+        <strong>Câu hỏi hoặc yêu cầu?</strong><br />
+        Liên hệ với chúng tôi tại <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a>.
+        Chúng tôi cố gắng trả lời trong vòng 5 ngày làm việc.
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/groce/privacy/vi/">Chính sách Bảo mật</a>
+      <a href="/groce/terms/vi/">Điều khoản Dịch vụ</a>
+      <a href="/groce/join">Tải ứng dụng</a>
+    </div>
+    <p>&copy; 2026 Groce &mdash; <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polityka prywatności — Groce</title>
+  <meta name="description" content="Polityka prywatności Groce — jak zbieramy, wykorzystujemy i chronimy Twoje dane." />
+  <link rel="stylesheet" href="/groce/assets/styles.css" />
+  <link rel="icon" type="image/webp" href="/groce/assets/logo.webp" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo-link" href="https://groce.araujojordan.com">
+      <img class="header-logo" src="/groce/assets/logo.webp" alt="Groce logo" />
+      <span class="app-name">Groce</span>
+    </a>
+    <nav class="header-right">
+      <a class="nav-link" href="/groce/terms/pl/">Warunki korzystania z usługi</a>
+      <a class="nav-link" href="/groce/join">Pobierz aplikację</a>
+    </nav>
+  </header>
+
+  <main class="page-wrap">
+
+    <div class="legal-header">
+      <h1>Polityka prywatności</h1>
+      <p class="effective-date">Data wejścia w życie: 18 maja 2026</p>
+    </div>
+
+    <p>
+      Groce (&ldquo;my&rdquo;, &ldquo;nas&rdquo; lub &ldquo;nasz&rdquo;) to wspólna aplikacja do zarządzania listą
+      zakupów dla systemów Android i iOS. Niniejsza Polityka prywatności wyjaśnia, jakie informacje zbieramy podczas
+      korzystania z Groce, jak je wykorzystujemy i komu je udostępniamy. Staraliśmy się napisać to w prostym języku —
+      jeśli cokolwiek jest niejasne, prosimy o kontakt pod adresem <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a>.
+    </p>
+
+    <h2>1. Jakie informacje zbieramy</h2>
+
+    <h3>Informacje o koncie</h3>
+    <p>
+      Gdy tworzysz konto — za pomocą adresu e-mail i hasła lub logowania przez Google — przechowujemy:
+    </p>
+    <ul>
+      <li>Twój adres e-mail</li>
+      <li>Twoją nazwę wyświetlaną</li>
+      <li>Adres URL Twojego zdjęcia profilowego (jeśli udostępniony przez Google; w przeciwnym razie żaden)</li>
+      <li>Znacznik czasu potwierdzenia pełnoletności — rejestrowany jednorazowo podczas rejestracji, gdy sam potwierdzasz, że jesteś w wieku uprawniającym do zakupu alkoholu, tytoniu i innych produktów z ograniczeniami wiekowymi w Twojej jurysdykcji. Nie zbieramy daty urodzenia, dokumentów tożsamości ani danych biometrycznych.</li>
+    </ul>
+    <p>
+      Te informacje są przechowywane w <strong>Firebase Authentication</strong> i w dokumencie <code>users</code>
+      w <strong>Cloud Firestore</strong>.
+    </p>
+
+    <h3>Dane listy zakupów</h3>
+    <p>Gdy korzystasz z Groce, przechowujemy treści tworzone przez Ciebie w Cloud Firestore:</p>
+    <ul>
+      <li>Nazwy list i adres e-mail właściciela listy</li>
+      <li>Nazwy produktów, ilości, jednostki, kategorie oraz stan zaznaczony/niezaznaczony</li>
+      <li>Opcjonalne zdjęcia produktów wykonane lub wybrane z biblioteki zdjęć</li>
+      <li>Nazwa wyświetlana osoby, która dodała każdy produkt</li>
+    </ul>
+
+    <h3>Dane udostępniania i współpracy</h3>
+    <p>
+      Gdy udostępniasz listę, przechowujemy adresy e-mail zaproszonych osób, osób, które zaakceptowały zaproszenie,
+      oraz osób, które poprosiły o dostęp za pośrednictwem udostępnionego linku. Jest to konieczne, aby zapewnić
+      właściwym współpracownikom dostęp do każdej listy.
+    </p>
+
+    <h2>2. Czego nie zbieramy</h2>
+    <ul>
+      <li>Twoich kontaktów ani książki adresowej</li>
+      <li>Twojej lokalizacji (nigdy nie prosimy o uprawnienia do lokalizacji)</li>
+      <li>Analiz naciśnięć klawiszy ani użytkowania poza tym, co Firebase domyślnie udostępnia</li>
+      <li>Żadnych danych od osób, które nie mają konta Groce</li>
+    </ul>
+
+    <h2>3. Usługi podmiotów trzecich</h2>
+    <p>Groce integruje się z kilkoma usługami podmiotów trzecich. Gdy korzystasz z niektórych funkcji, Twoje dane są wysyłane do tych usług:</p>
+
+    <h3>Google Firebase (Authentication &amp; Firestore)</h3>
+    <p>
+      Wszystkie konta użytkowników i dane list zakupów są przechowywane w Google Firebase. Twoje dane są przetwarzane zgodnie z
+      <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Polityką prywatności Firebase firmy Google</a>.
+    </p>
+
+    <h3>Google Sign-In</h3>
+    <p>
+      Jeśli logujesz się przez Google, otrzymujemy adres e-mail, imię i nazwisko oraz adres URL zdjęcia profilowego
+      z Twojego konta Google. Nie otrzymujemy żadnych innych danych z konta Google (np. kontaktów, Drive, Gmail).
+    </p>
+
+    <h3>Google AdMob</h3>
+    <p>
+      Groce zawiera Google AdMob do wyświetlania reklam. AdMob może zbierać:
+    </p>
+    <ul>
+      <li>Twój identyfikator reklamowy (Google Advertising ID na Android; IDFA na iOS)</li>
+      <li>Informacje o urządzeniu (model, wersja systemu operacyjnego, język, strefa czasowa)</li>
+      <li>Adres IP i przybliżoną lokalizację na podstawie IP</li>
+    </ul>
+    <p>
+      Szczegółowe informacje na temat wykorzystania tych danych przez AdMob można znaleźć w
+      <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Polityce prywatności Google</a>.
+    </p>
+
+    <h2>4. Uprawnienia urządzenia</h2>
+    <p>Groce żąda następujących uprawnień urządzenia i używa ich wyłącznie do podanego celu:</p>
+    <ul>
+      <li><strong>Aparat</strong> — do skanowania kodów kreskowych produktów i wykonywania zdjęć do produktów na liście zakupów.</li>
+      <li><strong>Biblioteka zdjęć</strong> — umożliwia dołączenie istniejącego zdjęcia do produktu na liście zakupów.</li>
+      <li><strong>Internet</strong> — wymagany do wszystkich funkcji (synchronizacja Firebase, wyszukiwanie obrazów itp.).</li>
+    </ul>
+    <p>Nie używamy aparatu ani biblioteki zdjęć do weryfikacji wieku, weryfikacji tożsamości ani do jakiegokolwiek zbierania danych biometrycznych.</p>
+
+    <h2>5. Jak wykorzystujemy Twoje informacje</h2>
+    <ul>
+      <li>Do tworzenia i uwierzytelniania Twojego konta.</li>
+      <li>Do przechowywania, synchronizowania i wyświetlania Twoich list zakupów Tobie i Twoim współpracownikom.</li>
+      <li>Do umożliwienia funkcji udostępniania (zaproszenia, linki dołączania, oczekujące prośby).</li>
+      <li>Do pobierania informacji o produktach i obrazów w Twoim imieniu.</li>
+      <li>Do wyświetlania reklam za pośrednictwem AdMob.</li>
+    </ul>
+    <p>Nie sprzedajemy Twoich danych osobowych podmiotom trzecim.</p>
+
+    <h2>6. Udostępnianie Twoich danych innym osobom</h2>
+    <p>
+      Gdy udostępniasz listę zakupów innej osobie, ta osoba będzie mogła zobaczyć:
+    </p>
+    <ul>
+      <li>Wszystkie produkty na liście, w tym kto dodał każdy produkt.</li>
+      <li>Nazwy wyświetlane i adresy e-mail innych współpracowników na tej samej liście.</li>
+    </ul>
+    <p>
+      Tylko osoby, które wyraźnie zapraszasz (lub które zatwierdzasz po złożeniu przez nie prośby o dostęp), mogą widzieć udostępnioną listę.
+    </p>
+
+    <h2>7. Przechowywanie i usuwanie danych</h2>
+    <p>
+      Twoje listy zakupów i produkty pozostają w Firestore do momentu ich usunięcia w aplikacji.
+      Jeśli chcesz usunąć swoje konto i wszystkie powiązane dane, odwiedź naszą stronę
+      <a href="/groce/delete-account/">Usuwanie konta</a>, aby uzyskać instrukcje; przetworzymy
+      Twoje żądanie w ciągu 30 dni.
+    </p>
+    <p>
+      Uwaga: samodzielne usuwanie konta w aplikacji nie jest jeszcze dostępne. Planujemy dodać tę funkcję w przyszłej aktualizacji.
+    </p>
+
+    <h2>8. Dzieci i wymagania dotyczące wieku</h2>
+    <p>
+      Groce nie jest skierowane do dzieci poniżej 13 roku życia. Nie zbieramy świadomie danych osobowych od
+      dzieci poniżej 13 roku życia.
+    </p>
+    <p>
+      Podczas rejestracji każdy użytkownik musi sam potwierdzić, że jest w wieku uprawniającym do zakupu alkoholu,
+      tytoniu i innych produktów z ograniczeniami wiekowymi w swojej jurysdykcji. Użytkownicy, którzy odmówią złożenia
+      tego oświadczenia, nie mogą korzystać z aplikacji. Nie przeprowadzamy weryfikacji wieku opartej na sztucznej
+      inteligencji, zdjęciach ani danych biometrycznych — oświadczenie jest prostą deklaracją własną. Jeśli uważasz,
+      że nieświadomie zebraliśmy informacje od nieuprawnionego użytkownika, prosimy o kontakt, a usuniemy je niezwłocznie.
+    </p>
+
+    <h2>9. Bezpieczeństwo</h2>
+    <p>
+      Wszystkie dane przesyłane między aplikacją a Firebase są szyfrowane podczas transmisji przy użyciu TLS. Dane
+      przechowywane w Firestore są szyfrowane w stanie spoczynku przez Google. Stosujemy reguły bezpieczeństwa Firebase,
+      aby zapewnić, że użytkownicy mogą czytać i zapisywać tylko dane, do których mają dostęp.
+    </p>
+
+    <h2>10. Zmiany w tej Polityce</h2>
+    <p>
+      Od czasu do czasu możemy aktualizować niniejszą Politykę prywatności. W takim przypadku zaktualizujemy datę
+      wejścia w życie u góry tej strony. Dalsze korzystanie z Groce po zmianie oznacza akceptację zaktualizowanej polityki.
+    </p>
+
+    <div class="contact-block">
+      <p>
+        <strong>Pytania lub prośby?</strong><br />
+        Skontaktuj się z nami pod adresem <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a>.
+        Staramy się odpowiadać w ciągu 5 dni roboczych.
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/groce/privacy/pl/">Polityka prywatności</a>
+      <a href="/groce/terms/pl/">Warunki korzystania z usługi</a>
+      <a href="/groce/join">Pobierz aplikację</a>
+    </div>
+    <p>&copy; 2026 Groce &mdash; <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a></p>
+  </footer>
+
+</body>
+</html>

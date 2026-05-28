@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacybeleid — Groce</title>
+  <meta name="description" content="Groce Privacybeleid — hoe wij uw gegevens verzamelen, gebruiken en beschermen." />
+  <link rel="stylesheet" href="/groce/assets/styles.css" />
+  <link rel="icon" type="image/webp" href="/groce/assets/logo.webp" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo-link" href="https://groce.araujojordan.com">
+      <img class="header-logo" src="/groce/assets/logo.webp" alt="Groce logo" />
+      <span class="app-name">Groce</span>
+    </a>
+    <nav class="header-right">
+      <a class="nav-link" href="/groce/terms/nl/">Gebruiksvoorwaarden</a>
+      <a class="nav-link" href="/groce/join">Download de app</a>
+    </nav>
+  </header>
+
+  <main class="page-wrap">
+
+    <div class="legal-header">
+      <h1>Privacybeleid</h1>
+      <p class="effective-date">Ingangsdatum: 18 mei 2026</p>
+    </div>
+
+    <p>
+      Groce (&ldquo;wij&rdquo;, &ldquo;ons&rdquo;, of &ldquo;onze&rdquo;) is een samenwerkende boodschappenlijst-app voor
+      Android en iOS. Dit Privacybeleid legt uit welke informatie wij verzamelen wanneer u Groce gebruikt, hoe wij deze
+      gebruiken en met wie wij deze delen. Wij hebben geprobeerd dit in begrijpelijke taal te schrijven &mdash; als iets onduidelijk is,
+      neem dan contact met ons op via <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a>.
+    </p>
+
+    <h2>1. Welke Informatie Wij Verzamelen</h2>
+
+    <h3>Accountinformatie</h3>
+    <p>
+      Wanneer u een account aanmaakt &mdash; met een e-mailadres en wachtwoord of via Google Sign-In &mdash; slaan wij op:
+    </p>
+    <ul>
+      <li>Uw e-mailadres</li>
+      <li>Uw weergavenaam</li>
+      <li>De URL van uw profielfoto (indien verstrekt door Google; anders geen)</li>
+      <li>Een tijdstempel van leeftijdsbevestiging &mdash; eenmalig vastgelegd bij registratie wanneer u zelf verklaart dat u de wettelijke leeftijd heeft om alcohol, tabak en andere leeftijdsgebonden producten in uw rechtsgebied te kopen. Wij verzamelen uw geboortedatum, identiteitsdocumenten of biometrische gegevens niet.</li>
+    </ul>
+    <p>
+      Deze informatie wordt opgeslagen in <strong>Firebase Authentication</strong> en in een <code>users</code>-document
+      in <strong>Cloud Firestore</strong>.
+    </p>
+
+    <h3>Boodschappenlijstgegevens</h3>
+    <p>Wanneer u Groce gebruikt, slaan wij de inhoud die u aanmaakt op in Cloud Firestore:</p>
+    <ul>
+      <li>Lijstnamen en het e-mailadres van de lijsteigenaar</li>
+      <li>Itemnamen, hoeveelheden, eenheden, categorieën en aangevinkte/niet-aangevinkte status</li>
+      <li>Optionele itemfoto&rsquo;s die u maakt of selecteert uit uw fotobibliotheek</li>
+      <li>De weergavenaam van degene die elk item heeft toegevoegd</li>
+    </ul>
+
+    <h3>Deel- en samenwerkingsgegevens</h3>
+    <p>
+      Wanneer u een lijst deelt, slaan wij de e-mailadressen op van mensen die u uitnodigt, mensen die een uitnodiging
+      hebben geaccepteerd en mensen die toegang hebben aangevraagd via een gedeelde link. Dit is noodzakelijk om de juiste
+      medewerkers toegang te verlenen tot elke lijst.
+    </p>
+
+    <h2>2. Wat Wij Niet Verzamelen</h2>
+    <ul>
+      <li>Uw contacten of adresboek</li>
+      <li>Uw locatie (wij vragen nooit om locatietoestemming)</li>
+      <li>Toetsaanslagen of gebruiksanalyses buiten wat Firebase standaard biedt</li>
+      <li>Gegevens van mensen die geen Groce-account hebben aangemaakt</li>
+    </ul>
+
+    <h2>3. Diensten van Derden</h2>
+    <p>Groce integreert met verschillende diensten van derden. Wanneer u bepaalde functies gebruikt, worden uw gegevens naar deze diensten verzonden:</p>
+
+    <h3>Google Firebase (Authentication &amp; Firestore)</h3>
+    <p>
+      Alle gebruikersaccounts en boodschappengegevens worden opgeslagen in Google Firebase. Uw gegevens worden verwerkt
+      overeenkomstig het
+      <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Firebase Privacybeleid van Google</a>.
+    </p>
+
+    <h3>Google Sign-In</h3>
+    <p>
+      Als u inlogt met Google, ontvangen wij het e-mailadres, de naam en de profielfoto-URL van uw Google-account.
+      Wij ontvangen geen andere Google-accountgegevens (bijv. contacten, Drive, Gmail).
+    </p>
+
+    <h3>Google AdMob</h3>
+    <p>
+      Groce bevat Google AdMob om advertenties te tonen. AdMob kan het volgende verzamelen:
+    </p>
+    <ul>
+      <li>Uw advertentie-identifier (Google Advertising ID op Android; IDFA op iOS)</li>
+      <li>Apparaatinformatie (model, OS-versie, taal, tijdzone)</li>
+      <li>IP-adres en grove locatie afgeleid van IP</li>
+    </ul>
+    <p>
+      Zie het <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Privacybeleid van Google</a>
+      voor details over hoe AdMob deze gegevens gebruikt.
+    </p>
+
+    <h2>4. Apparaatmachtigingen</h2>
+    <p>Groce vraagt de volgende apparaatmachtigingen aan en gebruikt deze alleen voor het vermelde doel:</p>
+    <ul>
+      <li><strong>Camera</strong> &mdash; om productbarcodes te scannen en foto&rsquo;s te maken voor boodschappenitems.</li>
+      <li><strong>Fotobibliotheek</strong> &mdash; om u een bestaande foto aan een boodschappenitem te laten koppelen.</li>
+      <li><strong>Internet</strong> &mdash; vereist voor alle functies (Firebase-synchronisatie, afbeeldingszoekfunctie, enz.).</li>
+    </ul>
+    <p>Wij gebruiken de camera of fotobibliotheek niet voor leeftijdsverificatie, identiteitsverificatie of biometrische gegevensverzameling van welke aard dan ook.</p>
+
+    <h2>5. Hoe Wij Uw Informatie Gebruiken</h2>
+    <ul>
+      <li>Om uw account aan te maken en te verifiëren.</li>
+      <li>Om uw boodschappenlijsten op te slaan, te synchroniseren en weer te geven aan u en uw medewerkers.</li>
+      <li>Om deelfuncties mogelijk te maken (uitnodigingen, deellinks, openstaande verzoeken).</li>
+      <li>Om namens u productinformatie en afbeeldingen op te halen.</li>
+      <li>Om advertenties weer te geven via AdMob.</li>
+    </ul>
+    <p>Wij verkopen uw persoonlijke informatie niet aan derden.</p>
+
+    <h2>6. Uw Gegevens Delen met Anderen</h2>
+    <p>
+      Wanneer u een boodschappenlijst deelt met een andere persoon, kan die persoon het volgende zien:
+    </p>
+    <ul>
+      <li>Alle items in de lijst, inclusief wie elk item heeft toegevoegd.</li>
+      <li>De weergavenamen en e-mailadressen van andere medewerkers op dezelfde lijst.</li>
+    </ul>
+    <p>
+      Alleen mensen die u expliciet uitnodigt (of die u goedkeurt nadat zij toegang hebben aangevraagd) kunnen een gedeelde lijst zien.
+    </p>
+
+    <h2>7. Gegevensbewaring en Verwijdering</h2>
+    <p>
+      Uw boodschappenlijsten en items blijven in Firestore totdat u ze verwijdert in de app.
+      Als u uw account en alle bijbehorende gegevens wilt verwijderen, bezoek dan onze
+      <a href="/groce/delete-account/">Accountverwijdering</a>-pagina voor instructies; wij verwerken
+      uw verzoek binnen 30 dagen.
+    </p>
+    <p>
+      Let op: zelfverwijdering van accounts in de app is nog niet beschikbaar. Wij zijn van plan dit in een toekomstige update toe te voegen.
+    </p>
+
+    <h2>8. Kinderen en Leeftijdsvereisten</h2>
+    <p>
+      Groce is niet gericht op kinderen onder de 13 jaar. Wij verzamelen niet bewust persoonlijke informatie van
+      kinderen onder de 13 jaar.
+    </p>
+    <p>
+      Bij registratie moet elke gebruiker zelf verklaren dat hij of zij de wettelijke leeftijd heeft om alcohol, tabak en
+      andere leeftijdsgebonden producten in zijn of haar rechtsgebied te kopen. Gebruikers die deze verklaring weigeren,
+      kunnen de app niet gebruiken. Wij voeren geen op AI gebaseerde, op foto gebaseerde of biometrische leeftijdscontroles
+      uit &mdash; de verklaring is een eenvoudige zelfverklaring. Als u vermoedt dat wij per ongeluk informatie van een
+      niet-toelaatbare gebruiker hebben verzameld, neem dan contact met ons op en wij zullen dit onmiddellijk verwijderen.
+    </p>
+
+    <h2>9. Beveiliging</h2>
+    <p>
+      Alle gegevens die worden verzonden tussen de app en Firebase zijn versleuteld tijdens verzending met behulp van TLS.
+      Gegevens opgeslagen in Firestore zijn versleuteld in rust door Google. Wij passen Firebase-beveiligingsregels toe
+      om te garanderen dat gebruikers alleen gegevens kunnen lezen en schrijven waartoe zij geautoriseerd zijn.
+    </p>
+
+    <h2>10. Wijzigingen in dit Beleid</h2>
+    <p>
+      Wij kunnen dit Privacybeleid van tijd tot tijd bijwerken. Wanneer wij dat doen, zullen wij de ingangsdatum bovenaan
+      deze pagina bijwerken. Voortgezet gebruik van Groce na een wijziging vormt uw aanvaarding van het bijgewerkte beleid.
+    </p>
+
+    <div class="contact-block">
+      <p>
+        <strong>Vragen of verzoeken?</strong><br />
+        Neem contact met ons op via <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a>.
+        Wij streven ernaar binnen 5 werkdagen te reageren.
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/groce/privacy/nl/">Privacybeleid</a>
+      <a href="/groce/terms/nl/">Gebruiksvoorwaarden</a>
+      <a href="/groce/join">Download de app</a>
+    </div>
+    <p>&copy; 2026 Groce &mdash; <a href="mailto:jordan@araujojordan.com">jordan@araujojordan.com</a></p>
+  </footer>
+
+</body>
+</html>
